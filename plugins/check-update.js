@@ -16,7 +16,7 @@ cmd({
     if (!isOwner) return reply("This command is only for the bot owner.");
 
     try {
-        await reply("🔍 Checking for Arslan-MD updates...");
+        await reply("🔍 Checking for Aeson-MD updates...");
 
         // Fetch the latest commit hash from GitHub
         const { data: commitData } = await axios.get("https://api.github.com/repos/Arslan-MD/Arslan_MD/commits/main");
@@ -26,10 +26,10 @@ cmd({
         const currentHash = await getCommitHash();
 
         if (latestCommitHash === currentHash) {
-            return reply("✅ Your Arslan_MD bot is already up-to-date!");
+            return reply("✅ Your Aeson-MD bot is already up-to-date!");
         }
 
-        await reply("🚀 Updating Arslan_MD Bot...");
+        await reply("🚀 Updating Aeson-MD Bot...");
 
         // Download the latest code
         const zipPath = path.join(__dirname, "latest.zip");

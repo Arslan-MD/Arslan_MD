@@ -45,12 +45,12 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         const channelMeta = await conn.newsletterMetadata("invite", channelId);
         await conn.newsletterReactMessage(channelMeta.id, messageId, emoji);
 
-        return reply(`╭━━━〔 *Arslan_MD* 〕━━━┈⊷
+        return reply(`╭━━━〔 *Aeson-MD* 〕━━━┈⊷
 ┃▸ *Success!* Reaction sent
 ┃▸ *Channel:* ${channelMeta.name}
 ┃▸ *Reaction:* ${emoji}
 ╰────────────────┈⊷
-> **© ᴘᴏᴡᴇʀᴇᴅ ʙʏ Arslan-Aɪ ♡*`);
+> **© ᴘᴏᴡᴇʀᴇᴅ ʙʏ Aeson-MD ♡*`);
     } catch (e) {
         console.error(e);
         reply(`❎ Error: ${e.message || "Failed to send reaction"}`);

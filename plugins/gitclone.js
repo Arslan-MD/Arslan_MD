@@ -56,7 +56,7 @@ cmd({
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterJid: '120363348739987203@newsletter',
-          newsletterName: 'ArslanMD Official',
+          newsletterName: 'Aeson-MD Official',
           serverMessageId: 143
         }
       }

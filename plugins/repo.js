@@ -11,7 +11,7 @@ cmd({
     filename: __filename,
 },
 async (conn, mek, m, { from, reply }) => {
-    const githubRepoURL = 'https://github.com/Arslan-MD/Arslan_MD';
+    const githubRepoURL = 'https://github.com/???/???';
 
     try {
         const [, username, repoName] = githubRepoURL.match(/github\.com\/([^/]+)\/([^/]+)/);
@@ -172,7 +172,7 @@ ${repoData.description || 'No description provided'}
 
         // Send image with repo info
         await conn.sendMessage(from, {
-            image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/yj7zp0.png' },
+            image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/twytnq.jpg' },
             caption: selectedStyle,
             contextInfo: { 
                 mentionedJid: [m.sender],
@@ -180,7 +180,7 @@ ${repoData.description || 'No description provided'}
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363348739987203@newsletter',
-                    newsletterName: config.OWNER_NAME || '𝐀𝐫𝐬𝐥𝐚𝐧_𝐌𝐃',
+                    newsletterName: config.OWNER_NAME || 'Aeson-MD',
                     serverMessageId: 143
                 }
             }
