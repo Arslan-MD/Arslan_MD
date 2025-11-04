@@ -1,12 +1,12 @@
 {
-  "name": "Arslan-MD",
+  "name": "ARSLAN-MD",
   "version": "4.5.0",
-  "description": "A WhatsApp Bot Created By ArslanMD Official",
-  "main": "index.js.js",
+  "description": "A WhatsApp Bot Created By ARSLAN-MD",
+  "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name Arslan-MD",
-    "stop": "pm2 stop Arslan-MD",
-    "restart": "pm2 restart Arslan-MD"
+    "start": "pm2 start index.js --deep-monitoring --attach --name ARSLAN-MD",
+    "stop": "pm2 stop ARSLAN-MD",
+    "restart": "pm2 restart ARSLAN-MD"
   },
   "dependencies": {
     "@whiskeysockets/baileys": "github:Jeliostarr/DEV-Baileys",
