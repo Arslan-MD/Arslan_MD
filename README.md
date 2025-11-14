@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Arslan-MD/Arslan_MD/main/asset/ezgif-76a3019ee67d2837.gif" width="100%" />
+  <img src="https://files.catbox.moe/lzccj0.gif" width="100%" />
 </p>
 
 <!-- 📊 STATS & HERO ANIMATION (Updated Colors) -->
