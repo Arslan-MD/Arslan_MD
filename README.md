@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Arslan-MD/Arslan_MD/main/lv_0_20251115004321.gif" width="100%" />
+  <img src="https://raw.githubusercontent.com/Arslan-MD/Arslan_MD/main/asset/lv_0_20251115004321.gif" width="100%" />
 </p>
 
 <!-- 📊 STATS & HERO ANIMATION (Updated Colors) -->
