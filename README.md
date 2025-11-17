@@ -7,7 +7,7 @@
 
 <!-- ANIMATED BANNER -->
 
-[![Arslan-Tech](https://raw.githubusercontent.com/Arslan-MD/Arslan-Tech-Bot/main/assets/mr.svg)](https://whatsapp.com/channel/0029VarfjW04tRrmwfb8x306)
+[![Arslan-MD](https://raw.githubusercontent.com/Arslan-MD/Arslan_MD/refs/heads/main/Arslan-MD/arslan.svg)](https://whatsapp.com/channel/0029VarfjW04tRrmwfb8x306)
 
 
 <!-- GLOWING MAIN BADGE -->
@@ -373,11 +373,11 @@ npm start
 
 <div align="center">
 
-🌌 ULTRA PRO MAX FOOTER
+🌌 FOOTER
 
 <!-- ANIMATED FOOTER TEXT -->
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&duration=3000&pause=1000&color=00FFFF&background=000000&center=true&vCenter=true&width=700&height=50&lines=©+2024+Arslan-MD+•+ULTRA+PRO+MAX+EDITION+•+MADE+WITH+❤️" alt="Footer" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&duration=3000&pause=1000&color=00FFFF&background=000000&center=true&vCenter=true&width=700&height=50&lines=©+Arslan-MD+MADE+WITH+ARSLAN-TECH❤️" alt="Footer" />
 
 <br>
 
