@@ -1,235 +1,191 @@
 <svg width="100%" height="100%" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Fun Color Gradients -->
-    <linearGradient id="fun-blue" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#4facfe"/>
-      <stop offset="100%" stop-color="#00f2fe"/>
+    <!-- Premium Gradients -->
+    <linearGradient id="premium-gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="50%" stop-color="#FFEC8B"/>
+      <stop offset="100%" stop-color="#FFD700"/>
     </linearGradient>
     
-    <linearGradient id="fun-pink" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ff9a9e"/>
-      <stop offset="100%" stop-color="#fecfef"/>
+    <linearGradient id="premium-purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8A2BE2"/>
+      <stop offset="100%" stop-color="#DA70D6"/>
     </linearGradient>
     
-    <linearGradient id="fun-green" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#43e97b"/>
-      <stop offset="100%" stop-color="#38f9d7"/>
+    <linearGradient id="premium-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4169E1"/>
+      <stop offset="100%" stop-color="#87CEEB"/>
     </linearGradient>
     
-    <linearGradient id="fun-orange" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#fa709a"/>
-      <stop offset="100%" stop-color="#fee140"/>
-    </linearGradient>
-    
-    <!-- Glow Effects -->
-    <filter id="soft-glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"/>
+    <!-- Premium Glow Effects -->
+    <filter id="premium-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
     
-    <!-- Cute Cartoon Characters -->
-    <g id="cute-cartoon1">
-      <!-- Body -->
-      <circle cx="0" cy="0" r="15" fill="url(#fun-blue)"/>
-      <!-- Eyes -->
-      <circle cx="-4" cy="-3" r="2" fill="#000"/>
-      <circle cx="4" cy="-3" r="2" fill="#000"/>
-      <!-- Smile -->
-      <path d="M -6 4 Q 0 8 6 4" stroke="#000" stroke-width="1.5" fill="none"/>
-      <!-- Blush -->
-      <circle cx="-7" cy="0" r="3" fill="#ff9a9e" opacity="0.6"/>
-      <circle cx="7" cy="0" r="3" fill="#ff9a9e" opacity="0.6"/>
-    </g>
+    <filter id="ultra-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
     
-    <g id="cute-cartoon2">
-      <!-- Body -->
-      <circle cx="0" cy="0" r="15" fill="url(#fun-pink)"/>
-      <!-- Eyes -->
-      <circle cx="-4" cy="-3" r="2" fill="#000"/>
-      <circle cx="4" cy="-3" r="2" fill="#000"/>
-      <!-- Smile -->
-      <path d="M -6 4 Q 0 8 6 4" stroke="#000" stroke-width="1.5" fill="none"/>
-      <!-- Blush -->
-      <circle cx="-7" cy="0" r="3" fill="#4facfe" opacity="0.6"/>
-      <circle cx="7" cy="0" r="3" fill="#4facfe" opacity="0.6"/>
-    </g>
+    <!-- Diamond Pattern -->
+    <pattern id="diamond" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="transparent"/>
+      <path d="M20 0 L40 20 L20 40 L0 20 Z" fill="#FFD700" opacity="0.1"/>
+    </pattern>
     
-    <g id="cute-cartoon3">
-      <!-- Body -->
-      <circle cx="0" cy="0" r="15" fill="url(#fun-green)"/>
-      <!-- Eyes -->
-      <circle cx="-4" cy="-3" r="2" fill="#000"/>
-      <circle cx="4" cy="-3" r="2" fill="#000"/>
-      <!-- Smile -->
-      <path d="M -6 4 Q 0 8 6 4" stroke="#000" stroke-width="1.5" fill="none"/>
-      <!-- Blush -->
-      <circle cx="-7" cy="0" r="3" fill="#fa709a" opacity="0.6"/>
-      <circle cx="7" cy="0" r="3" fill="#fa709a" opacity="0.6"/>
-    </g>
-    
-    <g id="cute-cartoon4">
-      <!-- Body -->
-      <circle cx="0" cy="0" r="15" fill="url(#fun-orange)"/>
-      <!-- Eyes -->
-      <circle cx="-4" cy="-3" r="2" fill="#000"/>
-      <circle cx="4" cy="-3" r="2" fill="#000"/>
-      <!-- Smile -->
-      <path d="M -6 4 Q 0 8 6 4" stroke="#000" stroke-width="1.5" fill="none"/>
-      <!-- Blush -->
-      <circle cx="-7" cy="0" r="3" fill="#43e97b" opacity="0.6"/>
-      <circle cx="7" cy="0" r="3" fill="#43e97b" opacity="0.6"/>
+    <!-- Crown Icon -->
+    <g id="crown">
+      <path d="M0 20 L10 0 L20 20 L30 0 L40 20 L35 25 L30 20 L25 25 L20 20 L15 25 L10 20 L5 25 Z" fill="url(#premium-gold)"/>
     </g>
   </defs>
 
-  <!-- Background -->
-  <rect width="100%" height="100%" fill="#f0f8ff"/>
+  <!-- Premium Background -->
+  <rect width="100%" height="100%" fill="#0a0a2a"/>
+  <rect width="100%" height="100%" fill="url(#diamond)" opacity="0.3"/>
   
-  <!-- Animated Clouds -->
-  <g opacity="0.7">
-    <circle cx="100" cy="80" r="25" fill="#ffffff"/>
-    <circle cx="120" cy="70" r="20" fill="#ffffff"/>
-    <circle cx="140" cy="80" r="22" fill="#ffffff"/>
-    <animateTransform attributeName="transform" type="translate" values="0,0;50,0;0,0" dur="20s" repeatCount="indefinite"/>
-  </g>
-  
-  <g opacity="0.7">
-    <circle cx="600" cy="120" r="20" fill="#ffffff"/>
-    <circle cx="620" cy="110" r="18" fill="#ffffff"/>
-    <circle cx="640" cy="120" r="19" fill="#ffffff"/>
-    <animateTransform attributeName="transform" type="translate" values="0,0;-40,0;0,0" dur="18s" repeatCount="indefinite"/>
+  <!-- Animated Background Elements -->
+  <g opacity="0.4">
+    <!-- Floating Diamonds -->
+    <path d="M100 100 L120 80 L140 100 L120 120 Z" fill="url(#premium-gold)" opacity="0.3">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="4s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-20;0,0" dur="5s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M700 150 L720 130 L740 150 L720 170 Z" fill="url(#premium-purple)" opacity="0.3">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="3s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,15;0,0" dur="4s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M150 400 L170 380 L190 400 L170 420 Z" fill="url(#premium-blue)" opacity="0.3">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="5s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0;-15,0;0,0" dur="6s" repeatCount="indefinite"/>
+    </path>
   </g>
 
-  <!-- Main Container -->
-  <rect x="50" y="50" width="700" height="400" rx="25" fill="#ffffff" stroke="url(#fun-blue)" stroke-width="4" filter="url(#soft-glow)"/>
+  <!-- Main Premium Container -->
+  <rect x="30" y="30" width="740" height="440" rx="30" fill="#1a1a3a" stroke="url(#premium-gold)" stroke-width="3" opacity="0.9"/>
   
   <!-- Inner Container -->
-  <rect x="70" y="70" width="660" height="360" rx="15" fill="#f8fdff" stroke="url(#fun-pink)" stroke-width="2"/>
-
-  <!-- Running Cartoons Path -->
-  <circle cx="400" cy="250" r="150" fill="none" stroke="#e6f7ff" stroke-width="2" stroke-dasharray="5,5"/>
+  <rect x="50" y="50" width="700" height="400" rx="20" fill="#2a2a4a" stroke="url(#premium-purple)" stroke-width="2"/>
   
-  <!-- Cute Cartoons Running Around -->
-  <use href="#cute-cartoon1">
-    <animateMotion dur="8s" repeatCount="indefinite" rotate="auto">
-      <mpath xlink:href="#circlePath1"/>
-    </animateMotion>
-    <animate attributeName="opacity" values="1;0.8;1" dur="2s" repeatCount="indefinite"/>
-  </use>
-  
-  <use href="#cute-cartoon2">
-    <animateMotion dur="6s" repeatCount="indefinite" rotate="auto" begin="2s">
-      <mpath xlink:href="#circlePath1"/>
-    </animateMotion>
-    <animate attributeName="opacity" values="0.8;1;0.8" dur="1.5s" repeatCount="indefinite"/>
-  </use>
-  
-  <use href="#cute-cartoon3">
-    <animateMotion dur="10s" repeatCount="indefinite" rotate="auto" begin="1s">
-      <mpath xlink:href="#circlePath1"/>
-    </animateMotion>
-    <animate attributeName="opacity" values="1;0.7;1" dur="3s" repeatCount="indefinite"/>
-  </use>
-  
-  <use href="#cute-cartoon4">
-    <animateMotion dur="7s" repeatCount="indefinite" rotate="auto" begin="3s">
-      <mpath xlink:href="#circlePath1"/>
-    </animateMotion>
-    <animate attributeName="opacity" values="0.7;1;0.7" dur="2.5s" repeatCount="indefinite"/>
-  </use>
-  
-  <!-- Hidden path for animation -->
-  <path id="circlePath1" d="M550,250 a150,150 0 1,1 -300,0 a150,150 0 1,1 300,0" fill="none"/>
-
-  <!-- Central Main Text -->
+  <!-- Central Medallion -->
   <g>
-    <text x="400" y="220" text-anchor="middle" font-size="36" font-weight="bold" font-family="Comic Sans MS, cursive" fill="url(#fun-blue)" filter="url(#soft-glow)">
+    <!-- Outer Ring -->
+    <circle cx="400" cy="250" r="120" fill="none" stroke="url(#premium-gold)" stroke-width="8" filter="url(#premium-glow)">
+      <animateTransform attributeName="transform" type="rotate" from="0 400 250" to="360 400 250" dur="20s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Middle Ring -->
+    <circle cx="400" cy="250" r="100" fill="none" stroke="url(#premium-purple)" stroke-width="5" opacity="0.8">
+      <animateTransform attributeName="transform" type="rotate" from="360 400 250" to="0 400 250" dur="15s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Inner Ring -->
+    <circle cx="400" cy="250" r="80" fill="#1a1a3a" stroke="url(#premium-blue)" stroke-width="3"/>
+    
+    <!-- Central Content -->
+    <text x="400" y="240" text-anchor="middle" font-size="32" font-weight="bold" font-family="Arial, sans-serif" fill="url(#premium-gold)" filter="url(#premium-glow)">
       ARSLAN-MD
-      <animate attributeName="opacity" values="1;0.9;1" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.8;1" dur="3s" repeatCount="indefinite"/>
     </text>
     
-    <text x="400" y="260" text-anchor="middle" font-size="28" font-weight="bold" font-family="Comic Sans MS, cursive" fill="url(#fun-pink)" filter="url(#soft-glow)">
-      WHATSAPP-BOT
-      <animate attributeName="opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite"/>
+    <text x="400" y="270" text-anchor="middle" font-size="18" font-family="Arial, sans-serif" fill="url(#premium-blue)" filter="url(#premium-glow)">
+      WHATSAPP BOT
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
     </text>
   </g>
 
-  <!-- Top Title -->
-  <text x="400" y="90" text-anchor="middle" font-size="32" font-weight="bold" font-family="Comic Sans MS, cursive" fill="url(#fun-orange)">
-    🇵🇰 ULTRA PRO MAX EDITION 🇵🇰
-    <animate attributeName="opacity" values="1;0.8;1" dur="3s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Bottom Text -->
-  <text x="400" y="400" text-anchor="middle" font-size="20" font-family="Comic Sans MS, cursive" fill="url(#fun-green)">
-    ☣️ CREATED BY ARSLAN-MD OFFICIAL ☣️
-    <animate attributeName="opacity" values="1;0.7;1" dur="2.5s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Floating Hearts -->
+  <!-- Top Crown Section -->
   <g>
-    <path d="M100 150 Q100 120 130 120 Q160 120 160 150 Q160 180 130 200 Q100 180 100 150 Z" fill="url(#fun-pink)" opacity="0.7">
-      <animate attributeName="opacity" values="0.7;0.3;0.7" dur="3s" repeatCount="indefinite"/>
-      <animate attributeName="transform" values="translate(0,0); translate(0,-10); translate(0,0)" dur="4s" repeatCount="indefinite"/>
+    <use href="#crown" x="380" y="80" width="40" height="30"/>
+    <text x="400" y="130" text-anchor="middle" font-size="36" font-weight="bold" font-family="Arial, sans-serif" fill="url(#premium-gold)" filter="url(#ultra-glow)">
+      ULTRA PRO MAX
+      <animate attributeName="opacity" values="1;0.7;1" dur="2s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- Bottom Section -->
+  <text x="400" y="400" text-anchor="middle" font-size="20" font-family="Arial, sans-serif" fill="url(#premium-purple)" filter="url(#premium-glow)">
+    ✨ CREATED BY ARSLAN-MD OFFICIAL ✨
+    <animate attributeName="opacity" values="1;0.6;1" dur="2.5s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Corner Decorations -->
+  <g>
+    <!-- Top Left -->
+    <path d="M80 80 L100 60 L120 80 L100 100 Z" fill="url(#premium-gold)" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.4;0.8" dur="3s" repeatCount="indefinite"/>
     </path>
     
-    <path d="M700 150 Q700 120 730 120 Q760 120 760 150 Q760 180 730 200 Q700 180 700 150 Z" fill="url(#fun-orange)" opacity="0.7">
-      <animate attributeName="opacity" values="0.7;0.3;0.7" dur="3s" repeatCount="indefinite"/>
-      <animate attributeName="transform" values="translate(0,0); translate(0,-10); translate(0,0)" dur="4s" repeatCount="indefinite"/>
+    <!-- Top Right -->
+    <path d="M720 80 L740 60 L760 80 L740 100 Z" fill="url(#premium-purple)" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.4;0.8" dur="3s" repeatCount="indefinite"/>
     </path>
     
-    <path d="M100 350 Q100 320 130 320 Q160 320 160 350 Q160 380 130 400 Q100 380 100 350 Z" fill="url(#fun-blue)" opacity="0.7">
-      <animate attributeName="opacity" values="0.7;0.3;0.7" dur="3s" repeatCount="indefinite"/>
-      <animate attributeName="transform" values="translate(0,0); translate(0,10); translate(0,0)" dur="4s" repeatCount="indefinite"/>
+    <!-- Bottom Left -->
+    <path d="M80 420 L100 400 L120 420 L100 440 Z" fill="url(#premium-blue)" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.4;0.8" dur="3s" repeatCount="indefinite"/>
     </path>
     
-    <path d="M700 350 Q700 320 730 320 Q760 320 760 350 Q760 380 730 400 Q700 380 700 350 Z" fill="url(#fun-green)" opacity="0.7">
-      <animate attributeName="opacity" values="0.7;0.3;0.7" dur="3s" repeatCount="indefinite"/>
-      <animate attributeName="transform" values="translate(0,0); translate(0,10); translate(0,0)" dur="4s" repeatCount="indefinite"/>
+    <!-- Bottom Right -->
+    <path d="M720 420 L740 400 L760 420 L740 440 Z" fill="url(#premium-gold)" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.4;0.8" dur="3s" repeatCount="indefinite"/>
     </path>
   </g>
 
-  <!-- Animated Stars -->
+  <!-- Floating Particles -->
   <g>
-    <path d="M200 100 L205 110 215 110 207 117 210 127 200 122 190 127 193 117 185 110 195 110 Z" fill="url(#fun-orange)" opacity="0.8">
-      <animate attributeName="opacity" values="0.8;0.4;0.8" dur="2s" repeatCount="indefinite"/>
-    </path>
+    <circle cx="200" cy="150" r="3" fill="url(#premium-gold)">
+      <animate attributeName="cy" values="150;130;150" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.3;1" dur="4s" repeatCount="indefinite"/>
+    </circle>
     
-    <path d="M600 100 L605 110 615 110 607 117 610 127 600 122 590 127 593 117 585 110 595 110 Z" fill="url(#fun-blue)" opacity="0.8">
-      <animate attributeName="opacity" values="0.8;0.4;0.8" dur="2s" repeatCount="indefinite"/>
-    </path>
+    <circle cx="600" cy="150" r="3" fill="url(#premium-purple)">
+      <animate attributeName="cy" values="150;170;150" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.3;1" dur="3s" repeatCount="indefinite"/>
+    </circle>
     
-    <path d="M200 380 L205 390 215 390 207 397 210 407 200 402 190 407 193 397 185 390 195 390 Z" fill="url(#fun-pink)" opacity="0.8">
-      <animate attributeName="opacity" values="0.8;0.4;0.8" dur="2s" repeatCount="indefinite"/>
-    </path>
+    <circle cx="200" cy="350" r="3" fill="url(#premium-blue)">
+      <animate attributeName="cy" values="350;330;350" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.3;1" dur="5s" repeatCount="indefinite"/>
+    </circle>
     
-    <path d="M600 380 L605 390 615 390 607 397 610 407 600 402 590 407 593 397 585 390 595 390 Z" fill="url(#fun-green)" opacity="0.8">
-      <animate attributeName="opacity" values="0.8;0.4;0.8" dur="2s" repeatCount="indefinite"/>
-    </path>
+    <circle cx="600" cy="350" r="3" fill="url(#premium-gold)">
+      <animate attributeName="cy" values="350;370;350" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.3;1" dur="4s" repeatCount="indefinite"/>
+    </circle>
   </g>
 
-  <!-- Bouncing Dots -->
+  <!-- Animated Border -->
+  <rect x="30" y="30" width="740" height="440" rx="30" fill="none" stroke="url(#premium-gold)" stroke-width="3" stroke-dasharray="20,10">
+    <animate attributeName="stroke-dashoffset" values="0;100;0" dur="5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Sparkle Effects -->
   <g>
-    <circle cx="300" cy="150" r="5" fill="url(#fun-blue)">
-      <animate attributeName="cy" values="150;140;150" dur="1.5s" repeatCount="indefinite"/>
-    </circle>
+    <!-- Top Sparkles -->
+    <path d="M300 100 L305 95 L310 100 L305 105 Z" fill="url(#premium-gold)" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0;0.8" dur="2s" repeatCount="indefinite"/>
+    </path>
     
-    <circle cx="350" cy="150" r="5" fill="url(#fun-pink)">
-      <animate attributeName="cy" values="150;140;150" dur="1.5s" repeatCount="indefinite" begin="0.5s"/>
-    </circle>
+    <path d="M500 100 L505 95 L510 100 L505 105 Z" fill="url(#premium-purple)" opacity="0.8">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" repeatCount="indefinite" begin="1s"/>
+    </path>
     
-    <circle cx="400" cy="150" r="5" fill="url(#fun-green)">
-      <animate attributeName="cy" values="150;140;150" dur="1.5s" repeatCount="indefinite" begin="1s"/>
-    </circle>
+    <!-- Bottom Sparkles -->
+    <path d="M300 400 L305 395 L310 400 L305 405 Z" fill="url(#premium-blue)" opacity="0.8">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+    </path>
     
-    <circle cx="450" cy="150" r="5" fill="url(#fun-orange)">
-      <animate attributeName="cy" values="150;140;150" dur="1.5s" repeatCount="indefinite" begin="1.5s"/>
-    </circle>
-    
-    <circle cx="500" cy="150" r="5" fill="url(#fun-blue)">
-      <animate attributeName="cy" values="150;140;150" dur="1.5s" repeatCount="indefinite" begin="2s"/>
-    </circle>
+    <path d="M500 400 L505 395 L510 400 L505 405 Z" fill="url(#premium-gold)" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0;0.8" dur="2s" repeatCount="indefinite" begin="1.5s"/>
+    </path>
   </g>
 </svg>
