@@ -93,44 +93,49 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=FFFF00&background=000000&center=true&vCenter=true&width=600&lines=⚠️+Add+your+session-id+in+settings+file+⚠️" alt="Important Notice">
   
   <br><br>
-  <a href="https://arslan-md-pair-site.onrender.com/">
+  <a href="arslan-v1-pairing-site.onrender.com/">
     <img src="https://img.shields.io/badge/🔑_GET_PAIR_CODE_SESSION-FF00FF?style=for-the-badge&logo=key&logoColor=white&labelColor=000000" width="300"/>
   </a>
 </div>
 
 ------
 
-<!-- ANIMATED DEPLOYMENT OPTIONS -->
+<!-- DEPLOYMENT OPTIONS -->
 <div align="center">
   <h2 style="color: #00FFFF; text-shadow: 0 0 10px #00FFFF;">🚀 DEPLOYMENT OPTIONS</h2>
   
   <table align="center">
     <tr>
-      <td align="center">
-        <h3>🦋 KATABUMP</h3>
-        <a href="https://katabump.com/">
-          <img src="https://img.shields.io/badge/🚀_DEPLOY_ON_KATAPULT-FF6B35?style=for-the-badge&logo=cloudflare&logoColor=white&labelColor=000000" width="220"/>
-        </a>
-      </td>
-      <td align="center">
-        <h3>🦅 PTERODACTYL_PANELS</h3>
-        <img src="https://img.shields.io/badge/🖥️_PTERODACTYL_PANEL-00A8E1?style=for-the-badge&logo=windowsterminal&logoColor=white&labelColor=000000" width="220"/>
-      </td>
+   <div align="center">
+  <table>
+    <tr>
+      <td><a href="https://dashboard.heroku.com/new?template=https://github.com/Arslan-MD/Arslan_MD" target="_blank"><img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white&labelColor=000000&color=00ffff"/></a></td>
+      <td><a href="https://talkdrove.com" target="_blank"><img src="https://img.shields.io/badge/TalkDrove-6971FF?style=for-the-badge&logo=github&logoColor=white&labelColor=000000"/></a></td>
     </tr>
     <tr>
-      <td align="center">
-        <h3>📱 TERMUX</h3>
-        <img src="https://img.shields.io/badge/📱_TERMUX_ANDROID-00B894?style=for-the-badge&logo=android&logoColor=white&labelColor=000000" width="220"/>
-      </td>
-      <td align="center">
-        <h3>🔗 RENDER</h3>
-        <a href="https://render.com/">
-          <img src="https://img.shields.io/badge/☁️_DEPLOY_ON_RENDER-000000?style=for-the-badge&logo=render&logoColor=white&labelColor=000000" width="220"/>
-        </a>
-      </td>
+      <td><a href="https://app.koyeb.com/services/deploy?type=git&repository=Arslan-MD/Arslan_MD" target="_blank"><img src="https://img.shields.io/badge/Koyeb-FF009D?style=for-the-badge&logo=koyeb&logoColor=white&labelColor=000000"/></a></td>
+      <td><a href="https://railway.app/new" target="_blank"><img src="https://img.shields.io/badge/Railway-FF8700?style=for-the-badge&logo=railway&logoColor=white&labelColor=000000"/></a></td>
+    </tr>
+    <tr>
+      <td><a href="https://dashboard.render.com/web/new" target="_blank"><img src="https://img.shields.io/badge/Render-000000?style=for-the-badge&logo=render&logoColor=white&labelColor=000000&color=00ffaa"/></a></td>
+      <td><a href="https://app.netlify.com/" target="_blank"><img src="https://img.shields.io/badge/Netlify-CC00FF?style=for-the-badge&logo=huggingface&logoColor=white&labelColor=000000"/></a></td>
     </tr>
   </table>
 </div>
+
+<table align="center">
+  <tr>
+    <td>
+      <a href="https://whatsapp.com/channel/0029VarfjW04tRrmwfb8x306" target="_blank">
+        <img alt="View Workflow Codes" src="https://img.shields.io/badge/View-Workflow%20Codes-FF0076?style=for-the-badge&logo=githubactions&logoColor=white"/>
+      </a>
+    </td>
+  </tr>
+</table>  
+
+<div align="center">
+  <img src="https://github.com/Arslan-MD/Arslan_MD/blob/main/assets/techwave.gif?raw=true" width="100%"/>
+</div>   
 
 ------
 
