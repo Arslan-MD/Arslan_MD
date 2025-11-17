@@ -150,7 +150,7 @@
     </path>
     
     <text x="400" y="150" text-anchor="middle" font-size="42" font-weight="bold" font-family="Arial, sans-serif" fill="url(#premium-gold)" filter="url(#ultra-glow)">
-      ULTRA PRO MAX
+     ULTRA WHATSAPP BOT
       <animate attributeName="opacity" values="1;0.7;1" dur="2s" repeatCount="indefinite"/>
       <animateTransform attributeName="transform" type="translate" values="0,0;0,-5;0,0" dur="3s" repeatCount="indefinite"/>
     </text>
