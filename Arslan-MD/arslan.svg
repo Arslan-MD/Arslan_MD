@@ -44,15 +44,19 @@
       </feMerge>
     </filter>
     
+    <!-- Ultra Glow filter -->
+    <filter id="ultra-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
     <!-- Grid pattern -->
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00ccff" stroke-width="0.5" opacity="0.3"/>
     </pattern>
-    
-    <!-- Bot image clip path -->
-    <clipPath id="bot-clip">
-      <circle cx="400" cy="230" r="80"/>
-    </clipPath>
   </defs>
 
   <!-- Dark background with grid pattern -->
@@ -112,17 +116,25 @@
   <rect x="50" y="50" width="700" height="400" rx="25" fill="#1118" stroke="#fff2" stroke-width="1.5"/>
   <rect x="50" y="50" width="700" height="400" rx="25" fill="url(#shine)" stroke="none"/>
 
-  <!-- Bot image with glow and animation -->
+  <!-- Ultra Awesome Arslan-MD Text -->
   <g>
-    <circle cx="400" cy="230" r="85" fill="url(#rainbow)" filter="url(#glow)">
-      <animate attributeName="r" values="85;90;85" dur="4s" repeatCount="indefinite"/>
+    <!-- Background glow for text -->
+    <circle cx="400" cy="230" r="100" fill="url(#rainbow)" opacity="0.2" filter="url(#ultra-glow)">
+      <animate attributeName="r" values="100;110;100" dur="4s" repeatCount="indefinite"/>
     </circle>
-    <image href="https://files.catbox.moe/16i1l7.jpg" x="320" y="150" width="160" height="160" clip-path="url(#bot-clip)" opacity="0.9">
-      <animate attributeName="opacity" values="0.9;1;0.9" dur="3s" repeatCount="indefinite"/>
-    </image>
-    <circle cx="400" cy="230" r="85" fill="none" stroke="url(#rainbow)" stroke-width="3" filter="url(#glow)">
-      <animate attributeName="stroke-width" values="3;5;3" dur="2s" repeatCount="indefinite"/>
-    </circle>
+    
+    <!-- Main Arslan-MD Text -->
+    <text x="400" y="240" text-anchor="middle" font-size="42" font-weight="bold" font-family="Segoe UI, Verdana, sans-serif" fill="url(#rainbow)" filter="url(#ultra-glow)">
+      ARSLAN-MD
+      <animate attributeName="opacity" values="1;0.7;1" dur="3s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="scale" values="1;1.05;1" dur="4s" repeatCount="indefinite"/>
+    </text>
+    
+    <!-- Secondary effect text -->
+    <text x="400" y="240" text-anchor="middle" font-size="42" font-weight="bold" font-family="Segoe UI, Verdana, sans-serif" fill="none" stroke="url(#rainbow)" stroke-width="2" opacity="0.8">
+      ARSLAN-MD
+      <animate attributeName="stroke-dasharray" values="5,5;20,5;5,5" dur="3s" repeatCount="indefinite"/>
+    </text>
   </g>
 
   <!-- Enhanced title text with multiple animations -->
@@ -169,7 +181,7 @@
     <animateTransform attributeName="transform" type="rotate" from="360 400 230" to="0 400 230" dur="18s" repeatCount="indefinite"/>
   </polygon>
 
-  <!-- Floating particles around the bot -->
+  <!-- Floating particles around the text -->
   <circle cx="320" cy="180" r="2" fill="url(#rainbow)" filter="url(#glow)">
     <animate attributeName="cy" values="180;160;180" dur="3s" repeatCount="indefinite"/>
     <animate attributeName="cx" values="320;310;320" dur="4s" repeatCount="indefinite"/>
@@ -186,4 +198,17 @@
     <animate attributeName="cy" values="280;300;280" dur="3s" repeatCount="indefinite"/>
     <animate attributeName="cx" values="480;490;480" dur="4s" repeatCount="indefinite"/>
   </circle>
+  
+  <!-- Additional animated stars -->
+  <g>
+    <path d="M400 180 L405 185 410 180 405 175 Z" fill="url(#rainbow)" opacity="0.7" filter="url(#glow)">
+      <animateTransform attributeName="transform" type="rotate" from="0 400 230" to="360 400 230" dur="20s" repeatCount="indefinite"/>
+    </path>
+    <path d="M370 230 L375 235 380 230 375 225 Z" fill="url(#rainbow)" opacity="0.7" filter="url(#glow)">
+      <animateTransform attributeName="transform" type="rotate" from="360 400 230" to="0 400 230" dur="15s" repeatCount="indefinite"/>
+    </path>
+    <path d="M430 230 L435 235 440 230 435 225 Z" fill="url(#rainbow)" opacity="0.7" filter="url(#glow)">
+      <animateTransform attributeName="transform" type="rotate" from="0 400 230" to="360 400 230" dur="18s" repeatCount="indefinite"/>
+    </path>
+  </g>
 </svg>
