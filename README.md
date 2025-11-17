@@ -16,10 +16,10 @@
 <!-- GLOWING ROTATING BADGES -->
 <div align="center">
 
-[![Version](https://img.shields.io/badge/🔥_VERSION_5.0_-00FFFF?style=for-the-badge&logo=starship&logoColor=white&labelColor=000000)](https://github.com/Arslan-MD/Arslan-Tech-Bot)
+[![Version](https://img.shields.io/badge/🔥_VERSION_5.0_-00FFFF?style=for-the-badge&logo=starship&logoColor=white&labelColor=000000)](https://github.com/Arslan-MD/Arslan_MD)
 [![WhatsApp](https://img.shields.io/badge/💚_WHATSAPP_MD_BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&labelColor=000000)](https://wa.me/message/VRZ5QLDAHXKSF1)
 [![NodeJS](https://img.shields.io/badge/🟢_NODE.JS_20.x_-339933?style=for-the-badge&logo=nodedotjs&logoColor=white&labelColor=000000)](https://nodejs.org/)
-[![Status](https://img.shields.io/badge/✅_STATUS_ONLINE-00FF00?style=for-the-badge&logo=serverless&logoColor=white&labelColor=000000)](https://github.com/Arslan-MD/Arslan-Tech-Bot)
+[![Status](https://img.shields.io/badge/✅_STATUS_ONLINE-00FF00?style=for-the-badge&logo=serverless&logoColor=white&labelColor=000000)](https://github.com/Arslan-MD/Arslan_MD)
 
 </div>
 
@@ -63,7 +63,7 @@
         </a>
       </td>
       <td align="center">
-        <a href="https://t.me/arskanmd">
+        <a href="https://t.me/arslanmd">
           <img src="https://img.shields.io/badge/📡_TELEGRAM_CHANNEL-0088CC?style=for-the-badge&logo=telegram&logoColor=white&labelColor=000000" width="250"/>
         </a>
       </td>
@@ -90,7 +90,7 @@
   <h2 style="color: #00FF00; text-shadow: 0 0 10px #00FF00;">🔐 SESSION SETUP</h2>
   
   <!-- TYPING ANIMATION FOR IMPORTANT -->
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=FFFF00&background=000000&center=true&vCenter=true&width=600&lines=⚠️+Add+creds.json+file+in+session+folder+⚠️" alt="Important Notice">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=FFFF00&background=000000&center=true&vCenter=true&width=600&lines=⚠️+Add+your+session-id+in+settings+file+⚠️" alt="Important Notice">
   
   <br><br>
   <a href="https://arslan-md-pair-site.onrender.com/">
@@ -192,17 +192,17 @@
   <table align="center">
     <tr>
       <td align="center">
-        <a href="https://github.com/Arslan-MD/Arslan-Tech-Bot/fork">
+        <a href="https://github.com/Arslan-MD/Arslan_MD/fork">
           <img src="https://img.shields.io/badge/🍴_FORK_REPO-000000?style=for-the-badge&logo=github&logoColor=white" width="180"/>
         </a>
       </td>
       <td align="center">
-        <a href="https://github.com/Arslan-MD/Arslan-Tech-Bot/stargazers">
+        <a href="https://github.com/Arslan-MD/Arslan_MD/stargazers">
           <img src="https://img.shields.io/badge/⭐_STAR_REPO-FFD700?style=for-the-badge&logo=github&logoColor=black" width="180"/>
         </a>
       </td>
       <td align="center">
-        <a href="https://github.com/Arslan-MD/Arslan-Tech-Bot/issues">
+        <a href="https://github.com/Arslan-MD/Arslan_MD/issues">
           <img src="https://img.shields.io/badge/🐛_REPORT_ISSUE-FF6B6B?style=for-the-badge&logo=github&logoColor=white" width="180"/>
         </a>
       </td>
@@ -230,7 +230,7 @@
 
   <!-- GLOWING DIVIDER -->
 
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=00FFFF&background=000000&center=true&vCenter=true&width=600&height=40&lines=©+A-T-B+•+Made+with+❤️+by+ArslanMD+Official" alt="Footer Animation">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=00FFFF&background=000000&center=true&vCenter=true&width=600&height=40&lines=©+Arslan-MD+•+Made+with+❤️+by+ArslanMD" alt="Footer Animation">
 
   <br>
 
