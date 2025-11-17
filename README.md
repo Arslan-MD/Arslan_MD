@@ -8,7 +8,7 @@
 
 -------
 
-[![Arslan-Tech](https://raw.githubusercontent.com/Arslan-MD/Arslan-Tech-Bot/main/Arslan-MD/arslan.svg.js)](https://whatsapp.com/channel/0029VarfjW04tRrmwfb8x306)
+[![Arslan-Tech](https://raw.githubusercontent.com/Arslan-MD/Arslan_MD/main/Arslan-MD/arslan.svg)](https://whatsapp.com/channel/0029VarfjW04tRrmwfb8x306)
 
 
 -------------
