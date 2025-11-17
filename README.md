@@ -1,10 +1,14 @@
-🚀 WELCOME TO ARSLAN-MD 🚀
+<!-- GLOWING DIVIDER -->
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=40&duration=3000&pause=1000&color=00FFFF&background=000000&center=true&vCenter=true&width=800&height=50&lines=🚀+WELCOME+TO+ARSLAN-MD+🚀" alt="Animated Header">
+
+</div>
 
 <div align="center">
 
 <!-- ANIMATED BANNER -->
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=ARSLAN-MD&fontSize=80&fontAlignY=35&animation=twinkling&desc=ULTRA%20PRO%20MAX%20EDITION&descSize=20&descAlignY=55" alt="Header" />
+[![Arslan-Tech](https://raw.githubusercontent.com/Arslan-MD/Arslan-Tech-Bot/main/assets/mr.svg)](https://whatsapp.com/channel/0029VarfjW04tRrmwfb8x306)
+
 
 <!-- GLOWING MAIN BADGE -->
 
