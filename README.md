@@ -177,7 +177,7 @@
   
   ```bash
   # 1. Clone Repository
-  git clone https://github.com/Arslan-MD/Arslan-Tech-Bot.git
+  git clone https://github.com/Arslan-MD/Arslan-MD.git
 
   # 2. Install Dependencies  
   npm install
