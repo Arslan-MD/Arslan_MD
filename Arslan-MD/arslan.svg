@@ -146,12 +146,12 @@
   <!-- Central Main Text -->
   <g>
     <text x="400" y="220" text-anchor="middle" font-size="36" font-weight="bold" font-family="Comic Sans MS, cursive" fill="url(#fun-blue)" filter="url(#soft-glow)">
-      👑ARSLAN-MD👑
+      ARSLAN-MD
       <animate attributeName="opacity" values="1;0.9;1" dur="2s" repeatCount="indefinite"/>
     </text>
     
     <text x="400" y="260" text-anchor="middle" font-size="28" font-weight="bold" font-family="Comic Sans MS, cursive" fill="url(#fun-pink)" filter="url(#soft-glow)">
-      ♻️WHATSAPP-BOT♻️
+      WHATSAPP-BOT
       <animate attributeName="opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite"/>
     </text>
   </g>
