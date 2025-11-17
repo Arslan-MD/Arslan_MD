@@ -1,4 +1,4 @@
-🤖 ***Arslan-MD*** - MULTIPLE POWERFUL WHATSAPP BOT
+🤖 ***Arslan-MD*** - POWERFUL WHATSAPP BOT
 
 > ⚔️ Developed by ArslanMD Official | 500+ Features | Super Aggressive Bot
 </div>
@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Arslan-MD/Arslan_MD/refs/heads/main/asset/ezgif-76a3019ee67d2837.gif" width="100%" />
+  <img src="https://files.catbox.moe/16i1l7.jpg" width="100%" />
 </p>
 
 <!-- 📊 STATS & HERO ANIMATION (Updated Colors) -->
