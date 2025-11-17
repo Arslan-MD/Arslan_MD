@@ -1,7 +1,7 @@
 {
   "name": "ARSLAN-MD",
   "description": "Javascript WhatsApp bot made by ArslanMD Official",
-  "logo": "https://o.uguu.se/upYMvwrT.jpg",
+  "logo": "https://files.catbox.moe/16i1l7.jpg",
   "keywords": ["ARSLAN-MD"],
   "success_url": "/",
 
@@ -16,7 +16,7 @@
     "STICKER_NAME": {
       "description": "type your sticker pack name.",
       "required": false,
-      "value": "𝓐𝓻𝓼𝓵𝓪𝓷_𝓜𝓓"
+      "value": "❀༒ᴀʀꜱʟᴀɴ-ᴍᴅ༒❀"
     }, 
       
     "PREFIX": {
@@ -78,7 +78,7 @@
     "AUTO_STATUS_MSG": {
       "description": "Type custom message on status reply",
       "required": true,
-      "value": "*SEEN YOUR STATUS BY ARSLAN-MD 🖤*"
+      "value": "*SEEN YOUR STATUS BY ❀༒ᴀʀꜱʟᴀɴ-ᴍᴅ༒❀ 🖤*"
    
      }, 
     
@@ -131,13 +131,13 @@
     "MENU_IMAGE_URL": {
       "description": "add url for mention reply and menu if want.",
       "required": false,
-      "value": "https://files.catbox.moe/lcpy9f.jpg"
+      "value": "https://files.catbox.moe/16i1l7.jpg"
     },
     
      "DESCRIPTION": {
       "description": "add caption for menu and other",
       "required": false,
-      "value": "*CREATER 𝓐𝓻𝓼𝓵𝓪𝓷_𝓜𝓓*"
+      "value": "*CREATER ❀༒ᴀʀꜱʟᴀɴ-ᴍᴅ༒❀*"
     },
 
       "DELETE_LINKS": {
