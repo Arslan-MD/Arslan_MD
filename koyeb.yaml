@@ -1,6 +1,6 @@
 name: Arslan_MD
 services:
-  - name: arslan_md-service
+  - name: arslan-md-service
     type: web
     ports:
       - 5000
