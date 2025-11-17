@@ -72,14 +72,23 @@ module.exports = {
     LIVE_MSG: process.env.LIVE_MSG || "> 🤖 ʙᴏᴛ ɪs sᴘᴀʀᴋɪɴɢ ᴀᴄᴛɪᴠᴇ ᴀɴᴅ ᴀʟɪᴠᴇ\n\nᴋᴇᴇᴘ ᴜsɪɴɢ ✦ᴀʀꜱʟᴀɴ-ᴍᴅ✦ ғʀᴏᴍ ᴀʀꜱʟᴀɴ-ᴍᴅ ᴛᴇᴄʜ ɪɴᴄ⚡\n\n*© ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ - ᴍᴅ*\n> 🌐 *ɢɪᴛʜᴜʙ :* github.com/Arslan-MD/Arslan_MD", // Alive message
 
     // 🎊 STARTUP MESSAGE
-    START_MSG: process.env.START_MSG || `*🔥 Hᴇʟʟᴏ ᴛʜᴇʀᴇ! ᴀʀꜱʟᴀɴ-ᴍᴅ ɪs ʟɪᴠᴇ! 👋🏻*\n\n` +
-        `🌟 *ᴋᴇᴇᴘ ᴏɴ ᴜsɪɴɢ ᴀʀꜱʟᴀɴ-ᴍᴅ 🇵🇰*\n\n` +
-        `📢 *ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟs:*\n` +
-        `• WhatsApp: https://whatsapp.com/channel/0029VarfjW04tRrmwfb8x306\n` +
-        `• YouTube: https://youtube.com/@arslanmdofficial\n\n` +
-        `⚡ *ʙᴏᴛ ᴘʀᴇғɪx:* [ . ]\n` +
-        `🔧 *ɢɪᴛʜᴜʙ:* https://github.com/Arslan-MD/Arslan_MD\n\n` +
-        `> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀʀꜱʟᴀɴ-ᴍᴅ ᴛᴇᴄʜ 🇵🇰` // Bot startup message
+    START_MSG: process.env.START_MSG || `*Hᴇʟʟᴏ ᴛʜᴇʀᴇ ᴀʀꜱʟᴀɴ-ᴍᴅ ᴄᴏɴɴᴇᴄᴛᴇᴅ! 👋🏻* 
+
+   *ᴋᴇᴇᴘ ᴏɴ ᴜsɪɴɢ ᴀʀꜱʟᴀɴ-ᴍᴅ 🇵🇰* 
+
+> 😘Joɪɴ ᴡʜᴀᴛsᴀᴘᴘ ᴄʜᴀɴɴᴇʟ (ᴀ ᴍᴜsᴛ): ⤵️  
+* *~_https://whatsapp.com/channel/0029VarfjW04tRrmwfb8x306_~*
+
+> ♻️sᴜʙsᴄʀɪʙᴇ ʏᴛ ᴄʜᴀɴɴᴇʟ ғᴏʀ ᴛᴜᴛᴏʀɪᴀʟs
+* *~_https://youtube.com/@arslanmdofficial_~*
+
+    🫣- *ʏᴏᴜʀ ʙᴏᴛ ᴘʀᴇғɪx: ➡️[ . ]*
+> - ʏᴏᴜ ᴄᴀɴ ᴄʜᴀɴɢᴇ ᴜʀ ᴘʀᴇғɪx ᴜsɪɴɢ ᴛʜᴇ .ᴘʀᴇғɪx ᴄᴏᴍᴍᴀɴᴅ
+
+> ᴅᴏɴᴛ ғᴏʀɢᴇᴛ ᴛᴏ sʜᴀʀᴇ, sᴛᴀʀ &ғᴏʀᴋ ᴛʜᴇ ʀᴇᴘᴏ ⬇️ 
+* *~_https://github.com/Arslan-MD/Arslan_MD_~*
+
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀʀꜱʟᴀɴ-ᴍᴅ ☣️` // Bot startup message
 };
 
 // 💫 ARSLAN-MD STYLE GUIDE
