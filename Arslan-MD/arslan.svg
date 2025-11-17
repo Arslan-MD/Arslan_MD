@@ -1,75 +1,40 @@
 <svg width="100%" height="100%" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Red, Green, White Gradient -->
-    <linearGradient id="patriotic" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ff0000">
-        <animate attributeName="offset" values="0;1" dur="4s" repeatCount="indefinite"/>
+    <!-- Cyber Gradient -->
+    <linearGradient id="cyber" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f7ff">
+        <animate attributeName="offset" values="0;1" dur="3s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="33%" stop-color="#ffffff">
-        <animate attributeName="offset" values="0.33;0" dur="4s" repeatCount="indefinite"/>
+      <stop offset="50%" stop-color="#ff00e6">
+        <animate attributeName="offset" values="0.5;0" dur="3s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="66%" stop-color="#00ff00">
-        <animate attributeName="offset" values="0.66;0.33" dur="4s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" stop-color="#ff0000">
-        <animate attributeName="offset" values="1;0.66" dur="4s" repeatCount="indefinite"/>
+      <stop offset="100%" stop-color="#00ff9d">
+        <animate attributeName="offset" values="1;0.5" dur="3s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
     
-    <!-- Red gradient -->
-    <linearGradient id="red-glow" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ff0000"/>
-      <stop offset="100%" stop-color="#ff4444"/>
+    <!-- Gold Gradient -->
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#ffed4e"/>
     </linearGradient>
     
-    <!-- Green gradient -->
-    <linearGradient id="green-glow" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00ff00"/>
-      <stop offset="100%" stop-color="#44ff44"/>
+    <!-- Purple Gradient -->
+    <linearGradient id="purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b00ff"/>
+      <stop offset="100%" stop-color="#c500ff"/>
     </linearGradient>
     
-    <!-- White gradient -->
-    <linearGradient id="white-glow" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#cccccc"/>
-    </linearGradient>
+    <!-- Matrix Background -->
+    <pattern id="matrix" patternUnits="userSpaceOnUse" width="20" height="40">
+      <rect width="20" height="40" fill="#001122"/>
+      <text x="10" y="20" font-family="monospace" font-size="14" fill="#00ff41" text-anchor="middle">0</text>
+      <text x="5" y="35" font-family="monospace" font-size="14" fill="#00ff41" text-anchor="middle">1</text>
+      <animateTransform attributeName="patternTransform" type="translate" from="0 0" to="0 40" dur="1s" repeatCount="indefinite"/>
+    </pattern>
     
-    <!-- New gradient for 3D effect -->
-    <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.3"/>
-      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.1"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-    </linearGradient>
-    
-    <!-- Red Glow filter -->
-    <filter id="red-glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    
-    <!-- Green Glow filter -->
-    <filter id="green-glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    
-    <!-- White Glow filter -->
-    <filter id="white-glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    
-    <!-- Strong Glow filter -->
-    <filter id="strong-glow" x="-50%" y="-50%" width="200%" height="200%">
+    <!-- Glow Effects -->
+    <filter id="cyber-glow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
@@ -77,162 +42,165 @@
       </feMerge>
     </filter>
     
-    <!-- Grid pattern -->
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.2"/>
+    <filter id="strong-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Circuit Pattern -->
+    <pattern id="circuit" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M0 50 L100 50 M50 0 L50 100" stroke="#00f7ff" stroke-width="1" fill="none" opacity="0.3"/>
+      <circle cx="50" cy="50" r="3" fill="#00f7ff" opacity="0.5"/>
     </pattern>
   </defs>
 
-  <!-- Dark background with grid pattern -->
-  <rect width="100%" height="100%" fill="#0a0a0a"/>
-  <rect width="100%" height="100%" fill="url(#grid)" opacity="0.1"/>
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#001122"/>
+  <rect width="100%" height="100%" fill="url(#matrix)" opacity="0.1"/>
+  <rect width="100%" height="100%" fill="url(#circuit)" opacity="0.2"/>
 
-  <!-- Red, Green, White Dots Background -->
+  <!-- Hexagon Grid Background -->
+  <g opacity="0.1">
+    <path d="M0 0 L50 0 L75 43 L50 86 L0 86 L-25 43 Z" fill="url(#cyber)" transform="translate(100,50)">
+      <animate attributeName="opacity" values="0.1;0.3;0.1" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <use href="#hex" x="150" y="30"/>
+    <use href="#hex" x="50" y="120"/>
+    <use href="#hex" x="200" y="100"/>
+    <use href="#hex" x="300" y="50"/>
+    <use href="#hex" x="400" y="120"/>
+    <use href="#hex" x="500" y="30"/>
+    <use href="#hex" x="600" y="100"/>
+    <use href="#hex" x="700" y="50"/>
+  </g>
+
+  <!-- Main Container -->
+  <rect x="40" y="40" width="720" height="420" rx="20" fill="#001a33" stroke="url(#cyber)" stroke-width="3" filter="url(#cyber-glow)"/>
+  
+  <!-- Inner Container -->
+  <rect x="60" y="60" width="680" height="380" rx="15" fill="#002244" stroke="url(#purple)" stroke-width="2" opacity="0.8"/>
+
+  <!-- Central Hologram Effect -->
   <g>
-    <circle cx="100" cy="100" r="4" fill="url(#patriotic)" filter="url(#red-glow)">
-      <animate attributeName="cy" values="100;450;100" dur="6s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="100;700;100" dur="12s" repeatCount="indefinite"/>
+    <!-- Hologram Base -->
+    <ellipse cx="400" cy="250" rx="180" ry="60" fill="url(#cyber)" opacity="0.3" filter="url(#cyber-glow)">
+      <animate attributeName="ry" values="60;80;60" dur="3s" repeatCount="indefinite"/>
+    </ellipse>
+    
+    <!-- Main ARSLAN-MD Text -->
+    <text x="400" y="220" text-anchor="middle" font-size="52" font-weight="bold" font-family="Arial, sans-serif" fill="url(#gold)" filter="url(#strong-glow)">
+      ARSLAN-MD
+      <animate attributeName="opacity" values="1;0.8;1" dur="2s" repeatCount="indefinite"/>
+    </text>
+    
+    <!-- Hologram Lines -->
+    <line x1="250" y1="240" x2="550" y2="240" stroke="url(#cyber)" stroke-width="2" opacity="0.6">
+      <animate attributeName="y1" values="240;245;240" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="240;245;240" dur="1.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="260" y1="250" x2="540" y2="250" stroke="url(#cyber)" stroke-width="2" opacity="0.5">
+      <animate attributeName="y1" values="250;255;250" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="250;255;250" dur="1.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="270" y1="260" x2="530" y2="260" stroke="url(#cyber)" stroke-width="2" opacity="0.4">
+      <animate attributeName="y1" values="260;265;260" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="260;265;260" dur="1.5s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- Rotating Gears -->
+  <g>
+    <!-- Left Gear -->
+    <path d="M200 150 L210 140 L220 150 L230 140 L240 150 L240 170 L230 180 L220 170 L210 180 L200 170 Z" fill="url(#gold)" opacity="0.8">
+      <animateTransform attributeName="transform" type="rotate" from="0 200 160" to="360 200 160" dur="15s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Right Gear -->
+    <path d="M600 150 L610 140 L620 150 L630 140 L640 150 L640 170 L630 180 L620 170 L610 180 L600 170 Z" fill="url(#gold)" opacity="0.8">
+      <animateTransform attributeName="transform" type="rotate" from="360 600 160" to="0 600 160" dur="15s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Top Title -->
+  <text x="400" y="90" text-anchor="middle" font-size="36" font-weight="bold" font-family="Arial, sans-serif" fill="url(#cyber)" filter="url(#cyber-glow)">
+    ⚡ ARSLAN-MD-POWERFULL-BOT ⚡
+    <animate attributeName="opacity" values="1;0.7;1" dur="2s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Bottom Text -->
+  <text x="400" y="380" text-anchor="middle" font-size="20" font-family="Arial, sans-serif" fill="url(#cyber)" filter="url(#cyber-glow)">
+    🔥 CREATED BY ARSLAN-MD OFFICIAL | FUTURE TECHNOLOGY 🔥
+    <animate attributeName="opacity" values="1;0.6;1" dur="2.5s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Floating Tech Elements -->
+  <g>
+    <!-- CPU Chip -->
+    <rect x="320" y="280" width="40" height="40" fill="#001a33" stroke="url(#cyber)" stroke-width="2">
+      <animate attributeName="y" values="280;275;280" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="325" y="285" width="30" height="30" fill="url(#purple)" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.9;0.7" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    
+    <!-- Data Disk -->
+    <circle cx="450" y="280" r="20" fill="#001a33" stroke="url(#cyber)" stroke-width="2">
+      <animate attributeName="cy" values="280;275;280" dur="3s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="500" cy="200" r="3" fill="url(#patriotic)" filter="url(#green-glow)">
-      <animate attributeName="cy" values="200;50;200" dur="8s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="500;100;500" dur="10s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="350" cy="350" r="5" fill="url(#patriotic)" filter="url(#white-glow)">
-      <animate attributeName="cy" values="350;80;350" dur="7s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="350;650;350" dur="9s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="650" cy="120" r="4" fill="url(#patriotic)" filter="url(#red-glow)">
-      <animate attributeName="cy" values="120;400;120" dur="11s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="650;200;650" dur="13s" repeatCount="indefinite"/>
-    </circle>
-    <!-- Additional dots -->
-    <circle cx="150" cy="250" r="3" fill="url(#patriotic)" filter="url(#green-glow)">
-      <animate attributeName="cy" values="250;100;250" dur="9s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="150;550;150" dur="14s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="450" cy="80" r="4" fill="url(#patriotic)" filter="url(#white-glow)">
-      <animate attributeName="cy" values="80;350;80" dur="10s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="450;150;450" dur="11s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="550" cy="400" r="3" fill="url(#patriotic)" filter="url(#red-glow)">
-      <animate attributeName="cy" values="400;120;400" dur="8s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="550;250;550" dur="15s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="250" cy="180" r="4" fill="url(#patriotic)" filter="url(#green-glow)">
-      <animate attributeName="cy" values="180;420;180" dur="7s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="250;600;250" dur="12s" repeatCount="indefinite"/>
+    <circle cx="450" y="280" r="15" fill="url(#gold)" opacity="0.7">
+      <animateTransform attributeName="transform" type="rotate" from="0 450 280" to="360 450 280" dur="8s" repeatCount="indefinite"/>
     </circle>
   </g>
 
-  <!-- Enhanced outer border -->
-  <rect x="20" y="20" width="760" height="460" rx="25" stroke="url(#patriotic)" stroke-width="5" fill="transparent" filter="url(#strong-glow)">
-    <animate attributeName="stroke-dasharray" values="20,10;50,5;10,20;20,10" dur="2s" repeatCount="indefinite"/>
-    <animate attributeName="stroke-width" values="5;8;5" dur="3s" repeatCount="indefinite"/>
+  <!-- Animated Border -->
+  <rect x="40" y="40" width="720" height="420" rx="20" fill="none" stroke="url(#cyber)" stroke-width="3" stroke-dasharray="20,10">
+    <animate attributeName="stroke-dashoffset" values="0;100;0" dur="4s" repeatCount="indefinite"/>
   </rect>
 
-  <!-- Enhanced inner border -->
-  <rect x="30" y="30" width="740" height="440" rx="20" stroke="url(#patriotic)" stroke-width="4" fill="transparent" filter="url(#white-glow)">
-    <animate attributeName="stroke-dasharray" values="10,5;30,10;5,15;10,5" dur="2s" repeatCount="indefinite"/>
-    <animate attributeName="stroke-width" values="4;6;4" dur="3s" repeatCount="indefinite"/>
-  </rect>
-
-  <!-- Enhanced glass box with 3D effect -->
-  <rect x="50" y="50" width="700" height="400" rx="25" fill="#1118" stroke="#fff2" stroke-width="1.5"/>
-  <rect x="50" y="50" width="700" height="400" rx="25" fill="url(#shine)" stroke="none"/>
-
-  <!-- Ultra Awesome Arslan-MD Text -->
-  <g>
-    <!-- Background glow for text -->
-    <circle cx="400" cy="230" r="100" fill="url(#patriotic)" opacity="0.2" filter="url(#strong-glow)">
-      <animate attributeName="r" values="100;110;100" dur="4s" repeatCount="indefinite"/>
-    </circle>
+  <!-- Binary Rain Animation -->
+  <g font-family="monospace" font-size="14" fill="#00ff9d" opacity="0.7">
+    <text x="80" y="120">1010</text>
+    <text x="120" y="160">1101</text>
+    <text x="700" y="140">0010</text>
+    <text x="650" y="180">1110</text>
+    <text x="100" y="360">0101</text>
+    <text x="680" y="380">1001</text>
     
-    <!-- Main Arslan-MD Text -->
-    <text x="400" y="240" text-anchor="middle" font-size="42" font-weight="bold" font-family="Segoe UI, Verdana, sans-serif" fill="url(#patriotic)" filter="url(#strong-glow)">
-      ARSLAN-MD
-      <animate attributeName="opacity" values="1;0.7;1" dur="3s" repeatCount="indefinite"/>
-      <animateTransform attributeName="transform" type="scale" values="1;1.05;1" dur="4s" repeatCount="indefinite"/>
-    </text>
-    
-    <!-- Secondary effect text -->
-    <text x="400" y="240" text-anchor="middle" font-size="42" font-weight="bold" font-family="Segoe UI, Verdana, sans-serif" fill="none" stroke="url(#patriotic)" stroke-width="2" opacity="0.8">
-      ARSLAN-MD
-      <animate attributeName="stroke-dasharray" values="5,5;20,5;5,5" dur="3s" repeatCount="indefinite"/>
-    </text>
+    <animate attributeName="opacity" values="0.7;0.3;0.7" dur="2s" repeatCount="indefinite"/>
   </g>
 
-  <!-- Enhanced title text with multiple animations -->
-  <text x="50%" y="90" text-anchor="middle" font-size="48" font-family="Segoe UI, Verdana, sans-serif" fill="url(#patriotic)" filter="url(#strong-glow)">
-    𓅓 ARSLAN-TECH-BOT 𓅓
-    <animateTransform attributeName="transform" type="scale" values="1;1.05;1" dur="3s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="1;0.8;1" dur="2s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Enhanced rotating circles -->
-  <circle cx="400" cy="230" r="110" fill="none" stroke="url(#patriotic)" stroke-width="3" filter="url(#red-glow)">
-    <animateTransform attributeName="transform" type="rotate" from="0 400 230" to="360 400 230" dur="12s" repeatCount="indefinite"/>
-    <animate attributeName="r" values="110;120;110" dur="5s" repeatCount="indefinite"/>
-  </circle>
-
-  <!-- Additional rotating circles -->
-  <circle cx="400" cy="230" r="95" fill="none" stroke="url(#patriotic)" stroke-width="2" opacity="0.7" filter="url(#green-glow)">
-    <animateTransform attributeName="transform" type="rotate" from="360 400 230" to="0 400 230" dur="10s" repeatCount="indefinite"/>
-  </circle>
-  
-  <circle cx="400" cy="230" r="130" fill="none" stroke="url(#patriotic)" stroke-width="2" opacity="0.5" filter="url(#white-glow)">
-    <animateTransform attributeName="transform" type="rotate" from="0 400 230" to="360 400 230" dur="15s" repeatCount="indefinite"/>
-  </circle>
-
-  <!-- Enhanced center text -->
-  <text x="400" y="350" text-anchor="middle" font-size="42" font-weight="bold" font-family="Segoe UI, Verdana, sans-serif" fill="url(#patriotic)" filter="url(#strong-glow)">
-    ULTRA PRO MAX EDITION
-    <animate attributeName="opacity" values="1;0.3;1" dur="4s" repeatCount="indefinite"/>
-    <animateTransform attributeName="transform" type="translate" values="0,0;0,-5;0,0" dur="3s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Enhanced footer text -->
-  <text x="50%" y="460" text-anchor="middle" font-size="22" font-family="Segoe UI, Verdana, sans-serif" fill="url(#patriotic)" filter="url(#white-glow)">
-    ➪ CREATED BY ARSLAN-MD OFFICIAL ☢︎︎
-    <animate attributeName="opacity" values="1;0.7;1" dur="2.5s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Additional decorative elements -->
-  <polygon points="400,150 415,180 385,180" fill="url(#patriotic)" opacity="0.8" filter="url(#red-glow)">
-    <animateTransform attributeName="transform" type="rotate" from="0 400 230" to="360 400 230" dur="18s" repeatCount="indefinite"/>
-  </polygon>
-  
-  <polygon points="400,310 415,280 385,280" fill="url(#patriotic)" opacity="0.8" filter="url(#green-glow)">
-    <animateTransform attributeName="transform" type="rotate" from="360 400 230" to="0 400 230" dur="18s" repeatCount="indefinite"/>
-  </polygon>
-
-  <!-- Floating particles around the text -->
-  <circle cx="320" cy="180" r="2" fill="url(#patriotic)" filter="url(#red-glow)">
-    <animate attributeName="cy" values="180;160;180" dur="3s" repeatCount="indefinite"/>
-    <animate attributeName="cx" values="320;310;320" dur="4s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="480" cy="180" r="2" fill="url(#patriotic)" filter="url(#green-glow)">
-    <animate attributeName="cy" values="180;160;180" dur="3s" repeatCount="indefinite"/>
-    <animate attributeName="cx" values="480;490;480" dur="4s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="320" cy="280" r="2" fill="url(#patriotic)" filter="url(#white-glow)">
-    <animate attributeName="cy" values="280;300;280" dur="3s" repeatCount="indefinite"/>
-    <animate attributeName="cx" values="320;310;320" dur="4s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="480" cy="280" r="2" fill="url(#patriotic)" filter="url(#red-glow)">
-    <animate attributeName="cy" values="280;300;280" dur="3s" repeatCount="indefinite"/>
-    <animate attributeName="cx" values="480;490;480" dur="4s" repeatCount="indefinite"/>
-  </circle>
-  
-  <!-- Additional animated stars -->
+  <!-- Energy Orbs -->
   <g>
-    <path d="M400 180 L405 185 410 180 405 175 Z" fill="url(#patriotic)" opacity="0.7" filter="url(#red-glow)">
-      <animateTransform attributeName="transform" type="rotate" from="0 400 230" to="360 400 230" dur="20s" repeatCount="indefinite"/>
-    </path>
-    <path d="M370 230 L375 235 380 230 375 225 Z" fill="url(#patriotic)" opacity="0.7" filter="url(#green-glow)">
-      <animateTransform attributeName="transform" type="rotate" from="360 400 230" to="0 400 230" dur="15s" repeatCount="indefinite"/>
-    </path>
-    <path d="M430 230 L435 235 440 230 435 225 Z" fill="url(#patriotic)" opacity="0.7" filter="url(#white-glow)">
-      <animateTransform attributeName="transform" type="rotate" from="0 400 230" to="360 400 230" dur="18s" repeatCount="indefinite"/>
-    </path>
+    <circle cx="150" cy="120" r="8" fill="url(#cyber)" filter="url(#cyber-glow)">
+      <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="650" cy="120" r="8" fill="url(#purple)" filter="url(#cyber-glow)">
+      <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="380" r="8" fill="url(#gold)" filter="url(#cyber-glow)">
+      <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="650" cy="380" r="8" fill="url(#cyber)" filter="url(#cyber-glow)">
+      <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Connection Lines -->
+  <g stroke="url(#cyber)" stroke-width="2" opacity="0.6">
+    <line x1="150" y1="120" x2="250" y2="150">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/>
+    </line>
+    <line x1="650" y1="120" x2="550" y2="150">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/>
+    </line>
+    <line x1="150" y1="380" x2="250" y2="350">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/>
+    </line>
+    <line x1="650" y1="380" x2="550" y2="350">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/>
+    </line>
   </g>
 </svg>
