@@ -1,20 +1,40 @@
 <svg width="100%" height="100%" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Premium Gradients -->
+    <!-- Premium Gradient Colors -->
     <linearGradient id="premium-gold" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FFD700"/>
-      <stop offset="50%" stop-color="#FFEC8B"/>
-      <stop offset="100%" stop-color="#FFD700"/>
-    </linearGradient>
-    
-    <linearGradient id="premium-purple" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#8A2BE2"/>
-      <stop offset="100%" stop-color="#DA70D6"/>
+      <stop offset="0%" stop-color="#FFD700">
+        <animate attributeName="offset" values="0;1" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#FFA500">
+        <animate attributeName="offset" values="0.5;0" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#FFEC8B">
+        <animate attributeName="offset" values="1;0.5" dur="4s" repeatCount="indefinite"/>
+      </stop>
     </linearGradient>
     
     <linearGradient id="premium-blue" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#4169E1"/>
-      <stop offset="100%" stop-color="#87CEEB"/>
+      <stop offset="0%" stop-color="#4169E1">
+        <animate attributeName="offset" values="0;1" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#00BFFF">
+        <animate attributeName="offset" values="0.5;0" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#1E90FF">
+        <animate attributeName="offset" values="1;0.5" dur="3s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    
+    <linearGradient id="premium-purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8A2BE2">
+        <animate attributeName="offset" values="0;1" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#DA70D6">
+        <animate attributeName="offset" values="0.5;0" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#9932CC">
+        <animate attributeName="offset" values="1;0.5" dur="5s" repeatCount="indefinite"/>
+      </stop>
     </linearGradient>
     
     <!-- Premium Glow Effects -->
@@ -35,137 +55,189 @@
     </filter>
     
     <!-- Diamond Pattern -->
-    <pattern id="diamond" width="40" height="40" patternUnits="userSpaceOnUse">
-      <rect width="40" height="40" fill="transparent"/>
-      <path d="M20 0 L40 20 L20 40 L0 20 Z" fill="#FFD700" opacity="0.1"/>
+    <pattern id="diamond" width="60" height="60" patternUnits="userSpaceOnUse">
+      <rect width="60" height="60" fill="transparent"/>
+      <path d="M30 0 L60 30 L30 60 L0 30 Z" fill="#FFD700" opacity="0.1"/>
     </pattern>
     
-    <!-- Crown Icon -->
-    <g id="crown">
-      <path d="M0 20 L10 0 L20 20 L30 0 L40 20 L35 25 L30 20 L25 25 L20 20 L15 25 L10 20 L5 25 Z" fill="url(#premium-gold)"/>
+    <!-- Circuit Pattern -->
+    <pattern id="circuit" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M0 40 L80 40 M40 0 L40 80" stroke="#00BFFF" stroke-width="1" opacity="0.2"/>
+      <circle cx="40" cy="40" r="3" fill="#00BFFF" opacity="0.3"/>
+    </pattern>
+    
+    <!-- Animated Star -->
+    <g id="animated-star">
+      <path d="M0 -15 L4 -4 L15 0 L4 4 L0 15 L-4 4 L-15 0 L-4 -4 Z" fill="url(#premium-gold)">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/>
+      </path>
     </g>
   </defs>
 
   <!-- Premium Background -->
   <rect width="100%" height="100%" fill="#0a0a2a"/>
-  <rect width="100%" height="100%" fill="url(#diamond)" opacity="0.3"/>
+  <rect width="100%" height="100%" fill="url(#diamond)" opacity="0.2"/>
+  <rect width="100%" height="100%" fill="url(#circuit)" opacity="0.1"/>
   
   <!-- Animated Background Elements -->
-  <g opacity="0.4">
-    <!-- Floating Diamonds -->
-    <path d="M100 100 L120 80 L140 100 L120 120 Z" fill="url(#premium-gold)" opacity="0.3">
-      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="4s" repeatCount="indefinite"/>
-      <animateTransform attributeName="transform" type="translate" values="0,0;0,-20;0,0" dur="5s" repeatCount="indefinite"/>
+  <g opacity="0.6">
+    <!-- Floating Geometric Shapes -->
+    <path d="M100 100 L150 80 L200 100 L150 120 Z" fill="url(#premium-blue)" opacity="0.4">
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="6s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0;20,-15;0,0" dur="7s" repeatCount="indefinite"/>
     </path>
     
-    <path d="M700 150 L720 130 L740 150 L720 170 Z" fill="url(#premium-purple)" opacity="0.3">
-      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="3s" repeatCount="indefinite"/>
-      <animateTransform attributeName="transform" type="translate" values="0,0;0,15;0,0" dur="4s" repeatCount="indefinite"/>
-    </path>
-    
-    <path d="M150 400 L170 380 L190 400 L170 420 Z" fill="url(#premium-blue)" opacity="0.3">
-      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="5s" repeatCount="indefinite"/>
-      <animateTransform attributeName="transform" type="translate" values="0,0;-15,0;0,0" dur="6s" repeatCount="indefinite"/>
-    </path>
-  </g>
-
-  <!-- Main Premium Container -->
-  <rect x="30" y="30" width="740" height="440" rx="30" fill="#1a1a3a" stroke="url(#premium-gold)" stroke-width="3" opacity="0.9"/>
-  
-  <!-- Inner Container -->
-  <rect x="50" y="50" width="700" height="400" rx="20" fill="#2a2a4a" stroke="url(#premium-purple)" stroke-width="2"/>
-  
-  <!-- Central Medallion -->
-  <g>
-    <!-- Outer Ring -->
-    <circle cx="400" cy="250" r="120" fill="none" stroke="url(#premium-gold)" stroke-width="8" filter="url(#premium-glow)">
-      <animateTransform attributeName="transform" type="rotate" from="0 400 250" to="360 400 250" dur="20s" repeatCount="indefinite"/>
+    <circle cx="700" cy="150" r="25" fill="url(#premium-purple)" opacity="0.4">
+      <animate attributeName="r" values="25;30;25" dur="4s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0;-15,10;0,0" dur="5s" repeatCount="indefinite"/>
     </circle>
     
-    <!-- Middle Ring -->
-    <circle cx="400" cy="250" r="100" fill="none" stroke="url(#premium-purple)" stroke-width="5" opacity="0.8">
-      <animateTransform attributeName="transform" type="rotate" from="360 400 250" to="0 400 250" dur="15s" repeatCount="indefinite"/>
-    </circle>
-    
-    <!-- Inner Ring -->
-    <circle cx="400" cy="250" r="80" fill="#1a1a3a" stroke="url(#premium-blue)" stroke-width="3"/>
-    
-    <!-- Central Content -->
-    <text x="400" y="240" text-anchor="middle" font-size="32" font-weight="bold" font-family="Arial, sans-serif" fill="url(#premium-gold)" filter="url(#premium-glow)">
-      ARSLAN-MD
-      <animate attributeName="opacity" values="1;0.8;1" dur="3s" repeatCount="indefinite"/>
-    </text>
-    
-    <text x="400" y="270" text-anchor="middle" font-size="18" font-family="Arial, sans-serif" fill="url(#premium-blue)" filter="url(#premium-glow)">
-      WHATSAPP BOT
-      <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
-    </text>
+    <rect x="150" y="380" width="40" height="40" rx="5" fill="url(#premium-gold)" opacity="0.4">
+      <animate attributeName="opacity" values="0.4;0.7;0.4" dur="5s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" values="0;15;0" dur="8s" repeatCount="indefinite"/>
+    </rect>
   </g>
 
-  <!-- Top Crown Section -->
+  <!-- Main Premium Container with Double Border -->
+  <rect x="20" y="20" width="760" height="460" rx="35" fill="#1a1a3a" stroke="url(#premium-gold)" stroke-width="4" opacity="0.9" filter="url(#premium-glow)"/>
+  
+  <rect x="30" y="30" width="740" height="440" rx="25" fill="#2a2a4a" stroke="url(#premium-purple)" stroke-width="3"/>
+  
+  <!-- Inner Container with Glass Effect -->
+  <rect x="50" y="50" width="700" height="400" rx="20" fill="#3a3a5a" opacity="0.8"/>
+  <rect x="50" y="50" width="700" height="400" rx="20" fill="url(#premium-blue)" opacity="0.1"/>
+  
+  <!-- Central Animated Medallion -->
   <g>
-    <use href="#crown" x="380" y="80" width="40" height="30"/>
-    <text x="400" y="130" text-anchor="middle" font-size="36" font-weight="bold" font-family="Arial, sans-serif" fill="url(#premium-gold)" filter="url(#ultra-glow)">
+    <!-- Outer Rotating Ring -->
+    <circle cx="400" cy="250" r="140" fill="none" stroke="url(#premium-gold)" stroke-width="6" stroke-dasharray="20,10" filter="url(#ultra-glow)">
+      <animateTransform attributeName="transform" type="rotate" from="0 400 250" to="360 400 250" dur="25s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-dashoffset" values="0;100;0" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Middle Pulsing Ring -->
+    <circle cx="400" cy="250" r="110" fill="none" stroke="url(#premium-purple)" stroke-width="4" opacity="0.8" filter="url(#premium-glow)">
+      <animateTransform attributeName="transform" type="rotate" from="360 400 250" to="0 400 250" dur="18s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="110;120;110" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Inner Glowing Ring -->
+    <circle cx="400" cy="250" r="80" fill="#2a2a4a" stroke="url(#premium-blue)" stroke-width="3" filter="url(#premium-glow)">
+      <animate attributeName="stroke-width" values="3;5;3" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Central Content with Multiple Animations -->
+    <g>
+      <text x="400" y="235" text-anchor="middle" font-size="38" font-weight="bold" font-family="Arial, sans-serif" fill="url(#premium-gold)" filter="url(#ultra-glow)">
+        ARSLAN-MD
+        <animate attributeName="opacity" values="1;0.8;1" dur="3s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="scale" values="1;1.05;1" dur="4s" repeatCount="indefinite"/>
+      </text>
+      
+      <text x="400" y="270" text-anchor="middle" font-size="22" font-family="Arial, sans-serif" fill="url(#premium-blue)" filter="url(#premium-glow)">
+        WHATSAPP BOT
+        <animate attributeName="opacity" values="0.9;1;0.9" dur="3s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="0,0;0,3;0,0" dur="3s" repeatCount="indefinite"/>
+      </text>
+    </g>
+  </g>
+
+  <!-- Top Premium Header -->
+  <g>
+    <!-- Animated Crown -->
+    <path d="M360 80 L400 50 L440 80 L430 110 L370 110 Z" fill="url(#premium-gold)" filter="url(#premium-glow)">
+      <animate attributeName="opacity" values="1;0.7;1" dur="2s" repeatCount="indefinite"/>
+    </path>
+    
+    <text x="400" y="150" text-anchor="middle" font-size="42" font-weight="bold" font-family="Arial, sans-serif" fill="url(#premium-gold)" filter="url(#ultra-glow)">
       ULTRA PRO MAX
       <animate attributeName="opacity" values="1;0.7;1" dur="2s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-5;0,0" dur="3s" repeatCount="indefinite"/>
     </text>
   </g>
 
-  <!-- Bottom Section -->
-  <text x="400" y="400" text-anchor="middle" font-size="20" font-family="Arial, sans-serif" fill="url(#premium-purple)" filter="url(#premium-glow)">
-    ✨ CREATED BY ARSLAN-MD OFFICIAL ✨
-    <animate attributeName="opacity" values="1;0.6;1" dur="2.5s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Corner Decorations -->
+  <!-- Bottom Animated Footer -->
   <g>
-    <!-- Top Left -->
-    <path d="M80 80 L100 60 L120 80 L100 100 Z" fill="url(#premium-gold)" opacity="0.8">
-      <animate attributeName="opacity" values="0.8;0.4;0.8" dur="3s" repeatCount="indefinite"/>
-    </path>
+    <text x="400" y="410" text-anchor="middle" font-size="24" font-family="Arial, sans-serif" fill="url(#premium-purple)" filter="url(#premium-glow)">
+      ✨ CREATED BY ARSLAN-MD OFFICIAL ✨
+      <animate attributeName="opacity" values="1;0.6;1" dur="2.5s" repeatCount="indefinite"/>
+    </text>
     
-    <!-- Top Right -->
-    <path d="M720 80 L740 60 L760 80 L740 100 Z" fill="url(#premium-purple)" opacity="0.8">
-      <animate attributeName="opacity" values="0.8;0.4;0.8" dur="3s" repeatCount="indefinite"/>
-    </path>
-    
-    <!-- Bottom Left -->
-    <path d="M80 420 L100 400 L120 420 L100 440 Z" fill="url(#premium-blue)" opacity="0.8">
-      <animate attributeName="opacity" values="0.8;0.4;0.8" dur="3s" repeatCount="indefinite"/>
-    </path>
-    
-    <!-- Bottom Right -->
-    <path d="M720 420 L740 400 L760 420 L740 440 Z" fill="url(#premium-gold)" opacity="0.8">
-      <animate attributeName="opacity" values="0.8;0.4;0.8" dur="3s" repeatCount="indefinite"/>
-    </path>
+    <!-- Animated Dots -->
+    <g>
+      <circle cx="320" cy="410" r="3" fill="url(#premium-gold)">
+        <animate attributeName="r" values="3;5;3" dur="1.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="340" cy="410" r="3" fill="url(#premium-blue)">
+        <animate attributeName="r" values="3;5;3" dur="1.5s" repeatCount="indefinite" begin="0.3s"/>
+      </circle>
+      <circle cx="360" cy="410" r="3" fill="url(#premium-purple)">
+        <animate attributeName="r" values="3;5;3" dur="1.5s" repeatCount="indefinite" begin="0.6s"/>
+      </circle>
+      <circle cx="440" cy="410" r="3" fill="url(#premium-purple)">
+        <animate attributeName="r" values="3;5;3" dur="1.5s" repeatCount="indefinite" begin="0.9s"/>
+      </circle>
+      <circle cx="460" cy="410" r="3" fill="url(#premium-blue)">
+        <animate attributeName="r" values="3;5;3" dur="1.5s" repeatCount="indefinite" begin="1.2s"/>
+      </circle>
+      <circle cx="480" cy="410" r="3" fill="url(#premium-gold)">
+        <animate attributeName="r" values="3;5;3" dur="1.5s" repeatCount="indefinite" begin="1.5s"/>
+      </circle>
+    </g>
   </g>
 
-  <!-- Floating Particles -->
+  <!-- Premium Corner Decorations -->
   <g>
-    <circle cx="200" cy="150" r="3" fill="url(#premium-gold)">
-      <animate attributeName="cy" values="150;130;150" dur="4s" repeatCount="indefinite"/>
+    <!-- Top Left Animated Diamond -->
+    <path d="M80 80 L100 60 L120 80 L100 100 Z" fill="url(#premium-gold)" opacity="0.8" filter="url(#premium-glow)">
+      <animate attributeName="opacity" values="0.8;0.4;0.8" dur="3s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" values="0;15;0" dur="5s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Top Right Animated Star -->
+    <use href="#animated-star" x="720" y="80" transform="scale(1.2)"/>
+    
+    <!-- Bottom Left Animated Hexagon -->
+    <path d="M80 420 L95 400 L115 400 L130 420 L115 440 L95 440 Z" fill="url(#premium-blue)" opacity="0.8" filter="url(#premium-glow)">
+      <animate attributeName="opacity" values="0.8;0.4;0.8" dur="4s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" values="0;-15;0" dur="6s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Bottom Right Animated Circle -->
+    <circle cx="720" cy="420" r="20" fill="none" stroke="url(#premium-purple)" stroke-width="2" opacity="0.8" filter="url(#premium-glow)">
+      <animate attributeName="r" values="20;25;20" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="2;4;2" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Floating Animated Particles -->
+  <g>
+    <!-- Left Side Particles -->
+    <circle cx="100" cy="200" r="2" fill="url(#premium-gold)">
+      <animate attributeName="cy" values="200;180;200" dur="4s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="1;0.3;1" dur="4s" repeatCount="indefinite"/>
     </circle>
     
-    <circle cx="600" cy="150" r="3" fill="url(#premium-purple)">
-      <animate attributeName="cy" values="150;170;150" dur="3s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="1;0.3;1" dur="3s" repeatCount="indefinite"/>
-    </circle>
-    
-    <circle cx="200" cy="350" r="3" fill="url(#premium-blue)">
-      <animate attributeName="cy" values="350;330;350" dur="5s" repeatCount="indefinite"/>
+    <circle cx="120" cy="300" r="2" fill="url(#premium-blue)">
+      <animate attributeName="cy" values="300;320;300" dur="5s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="1;0.3;1" dur="5s" repeatCount="indefinite"/>
     </circle>
     
-    <circle cx="600" cy="350" r="3" fill="url(#premium-gold)">
-      <animate attributeName="cy" values="350;370;350" dur="4s" repeatCount="indefinite"/>
+    <!-- Right Side Particles -->
+    <circle cx="700" cy="200" r="2" fill="url(#premium-purple)">
+      <animate attributeName="cy" values="200;220;200" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.3;1" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="680" cy="300" r="2" fill="url(#premium-gold)">
+      <animate attributeName="cy" values="300;280;300" dur="4s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="1;0.3;1" dur="4s" repeatCount="indefinite"/>
     </circle>
   </g>
 
-  <!-- Animated Border -->
-  <rect x="30" y="30" width="740" height="440" rx="30" fill="none" stroke="url(#premium-gold)" stroke-width="3" stroke-dasharray="20,10">
-    <animate attributeName="stroke-dashoffset" values="0;100;0" dur="5s" repeatCount="indefinite"/>
+  <!-- Animated Border Effect -->
+  <rect x="20" y="20" width="760" height="460" rx="35" fill="none" stroke="url(#premium-gold)" stroke-width="4" stroke-dasharray="30,15" opacity="0.7">
+    <animate attributeName="stroke-dashoffset" values="0;90;0" dur="6s" repeatCount="indefinite"/>
   </rect>
 
   <!-- Sparkle Effects -->
@@ -175,17 +247,36 @@
       <animate attributeName="opacity" values="0.8;0;0.8" dur="2s" repeatCount="indefinite"/>
     </path>
     
-    <path d="M500 100 L505 95 L510 100 L505 105 Z" fill="url(#premium-purple)" opacity="0.8">
+    <path d="M500 100 L505 95 L510 100 L505 105 Z" fill="url(#premium-blue)" opacity="0.8">
       <animate attributeName="opacity" values="0;0.8;0" dur="2s" repeatCount="indefinite" begin="1s"/>
     </path>
     
     <!-- Bottom Sparkles -->
-    <path d="M300 400 L305 395 L310 400 L305 405 Z" fill="url(#premium-blue)" opacity="0.8">
+    <path d="M300 400 L305 395 L310 400 L305 405 Z" fill="url(#premium-purple)" opacity="0.8">
       <animate attributeName="opacity" values="0;0.8;0" dur="2s" repeatCount="indefinite" begin="0.5s"/>
     </path>
     
     <path d="M500 400 L505 395 L510 400 L505 405 Z" fill="url(#premium-gold)" opacity="0.8">
       <animate attributeName="opacity" values="0.8;0;0.8" dur="2s" repeatCount="indefinite" begin="1.5s"/>
     </path>
+  </g>
+
+  <!-- Floating Tech Elements -->
+  <g>
+    <!-- Left Side CPU -->
+    <rect x="100" y="150" width="25" height="25" fill="#2a2a4a" stroke="url(#premium-blue)" stroke-width="2">
+      <animate attributeName="y" values="150;145;150" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="105" y="155" width="15" height="15" fill="url(#premium-blue)" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.9;0.7" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    
+    <!-- Right Side Data Disk -->
+    <circle cx="700" cy="150" r="12" fill="#2a2a4a" stroke="url(#premium-purple)" stroke-width="2">
+      <animate attributeName="cy" values="150;145;150" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="150" r="8" fill="url(#premium-purple)" opacity="0.7">
+      <animateTransform attributeName="transform" type="rotate" from="0 700 150" to="360 700 150" dur="8s" repeatCount="indefinite"/>
+    </circle>
   </g>
 </svg>
