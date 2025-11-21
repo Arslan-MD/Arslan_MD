@@ -25,7 +25,8 @@ module.exports = {
     PREFIX: process.env.PREFIX || ".", // Bot command prefix (e.g., .,!,/,#)
     BOT_NAME: process.env.BOT_NAME || "✦[ᴀʀꜱʟᴀɴ-ᴍᴅ]✦", // Your bot's display name
     MODE: process.env.MODE || "public", // Bot mode: "public" or "private"
-    chatbotEnabled: stringToBool(process.env.chatbotEnabled || "true"), // Enable AI chatbot feature
+    CHATBOT: settings.CHATBOT || process.env.CHATBOT || "off",
+    chatbotEnabled: stringToBool(process.env.chatbotEnabled || "false"), // Enable AI chatbot feature
     version: process.env.version || "4.0.0", // Bot version number
 
     // 💬 MESSAGE HANDLING
