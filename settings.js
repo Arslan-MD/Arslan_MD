@@ -1,111 +1,191 @@
 const fs = require('fs');
-if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
+const path = require('path');
+const settings = require('./settingss');
 
-// 🔧 Utility Function
-const stringToBool = (str) => str.toLowerCase() === 'true';
+// 🔧 CONFIGURATION INITIALIZATION
+// ============================================
+// Load environment variables from config.env if exists
+if (fs.existsSync(path.resolve('config.env'))) {
+  require('dotenv').config({ path: path.resolve('config.env') });
+}
 
-// ⚡ ARSLAN-MD CONFIGURATION - ULTRA STYLISH WITH DESCRIPTIONS
+// 📦 HELPER FUNCTION
+// ============================================
+// Convert string values to boolean
+function convertToBool(text, trueValue = 'true') {
+  return text === trueValue;
+}
+
+// 🔑 API KEY MANAGEMENT
+// ============================================
+// Global API key configuration with fallback support
+// Primary: settings.js → Secondary: process.env → Fallback: Default
+global.btc = settings.btc || process.env.BTC_API_KEY || 'Apikey_Lu_Mas';
+global.betabotz = settings.betabotz || process.env.BETABOTZ_API_KEY || 'Apikey_Lu_Mas';
+global.geminiai = settings.geminiai || process.env.GEMINIAI_API_KEY || 'Apikey_Lu_Mas';
+global.geminimaker = settings.geminimaker || process.env.GEMINIMAKER_API_KEY || 'Apikey_Lu_Mas';
+global.lolkey = settings.lolkey || process.env.LOLHUMAN_API_KEY || 'Apikey_Lu_Mas';
+global.fgsiapi = settings.fgsiapi || process.env.FGSI_API_KEY || 'Apikey_Lu_Mas';
+
+// ⚠️ CRITICAL SECTION - DO NOT MODIFY
+// ============================================
+// API endpoint configuration
+global.APIs = {
+  btc: 'https://api.botcahx.eu.org'
+}
+
+global.APIKeys = {
+  'https://api.botcahx.eu.org': global.btc
+}
+
+// 🤖 BOT CONFIGURATION EXPORT
+// ============================================
+// Developer: ArslanMD Official
+// Bot Name: Arslan-MD
+// Repository: https://github.com/Arslan-MD/Arslan_MD
+// Version: 2.0.1
+
 module.exports = {
-    // 🔐 SESSION & AUTHENTICATION
-    SESSION_ID: process.env.SESSION_ID || "", // Your WhatsApp session ID - keep this secure!
+  // ========================
+  // 🤖 BOT CORE SETTINGS
+  // ========================
+  SESSION_ID: settings.SESSION_ID || process.env.SESSION_ID || "",
+  PREFIX: settings.PREFIX || process.env.PREFIX || ".",
+  CHATBOT: settings.CHATBOT || process.env.CHATBOT || "off",
+  BOT_NAME: settings.BOT_NAME || process.env.BOT_NAME || "ᴀʀꜱʟᴀɴ-ᴍᴅ",
+  MODE: settings.MODE || process.env.MODE || "private",
+  REPO: process.env.REPO || "https://github.com/Arslan-MD/Arslan_MD",
+  PAIRING_CODE: process.env.PAIRING_CODE || 'true',
+  BAILEYS: process.env.BAILEYS || "@whiskeysockets/baileys",
 
-    // 🎯 SECURITY & MODERATION
-    DELETE_LINKS: stringToBool(process.env.DELETE_LINKS || "true"), // Auto delete non-whitelisted links
-    LINK_WHITELIST: "youtube.com,github.com", // Allowed domains - separate with commas
-    LINK_WARN_LIMIT: 3, // Number of warnings before taking action
-    LINK_ACTION: "kick", // Action for link violators: "kick", "mute", or "none"
-    ANTI_BAD: stringToBool(process.env.ANTI_BAD || "false"), // Block bad words in group
-    ANTI_LINK: stringToBool(process.env.ANTI_LINK || "true"), // Prevent sharing links in group
-    ANTI_BOT: stringToBool(process.env.ANTI_BOT || "true"), // Block other bots from group
-    ANTI_DELETE: stringToBool(process.env.ANTI_DELETE || "true"), // Prevent message deletion in group
-    ANTI_VV: stringToBool(process.env.ANTI_VV || "true"), // Anti-view once feature
-    ANTI_DEL_PATH: process.env.ANTI_DEL_PATH || "log", // Path for anti-delete logs
+  // ========================
+  // 👑 OWNER & DEVELOPER
+  // ========================
+  OWNER_NUMBER: settings.OWNER_NUMBER || process.env.OWNER_NUMBER || "923237045919",
+  OWNER_NAME: settings.OWNER_NAME || process.env.OWNER_NAME || "ᴀʀꜱʟᴀɴ-ᴍᴅ",
+  DEV_NAME: process.env.DEV_NAME || "ᴀʀꜱʟᴀɴ-ᴍᴅ",
+  DEV: process.env.DEV || "923237045919",
+  DEVELOPER_NUMBER: '923237045919@s.whatsapp.net',
 
-    // 🤖 BOT CORE FEATURES
-    PREFIX: process.env.PREFIX || ".", // Bot command prefix (e.g., .,!,/,#)
-    BOT_NAME: process.env.BOT_NAME || "✦[ᴀʀꜱʟᴀɴ-ᴍᴅ]✦", // Your bot's display name
-    MODE: process.env.MODE || "public", // Bot mode: "public" or "private"
-    chatbotEnabled: stringToBool(process.env.chatbotEnabled || "false"), // Enable AI chatbot feature
-    version: process.env.version || "4.0.0", // Bot version number
+  // ========================
+  // 🔐 API KEY INTEGRATION
+  // ========================
+  BTC_API_KEY: global.btc,
+  BETABOTZ_API_KEY: global.betabotz,
+  GEMINIAI_API_KEY: global.geminiai,
+  GEMINIMAKER_API_KEY: global.geminimaker,
+  LOLHUMAN_API_KEY: global.lolkey,
+  FGSI_API_KEY: global.fgsiapi,
+  
+  // ========================
+  // 🎵 MEDIA & AUDIO
+  // ========================
+  MENU_AUDIO_URL: settings.MENU_AUDIO_URL || process.env.MENU_AUDIO_URL || 'https://files.catbox.moe/xkvhbi.mp3',
+  AUDIO_URL: settings.AUDIO_URL || process.env.AUDIO_URL || 'https://files.catbox.moe/j88eur.mp3',
+  AUDIO_URL2: settings.AUDIO_URL2 || process.env.AUDIO_URL2 || 'https://files.catbox.moe/wlt7ge.mp3',
 
-    // 💬 MESSAGE HANDLING
-    READ_MESSAGE: stringToBool(process.env.READ_MESSAGE || "false"), // Mark messages as read automatically
-    READ_CMD: stringToBool(process.env.READ_CMD || "false"), // Read command messages only
-    AUTO_REPLY: stringToBool(process.env.AUTO_REPLY || "false"), // Auto-reply to messages
+  // ========================
+  // 📧 NEWSLETTER SETTINGS
+  // ========================
+  NEWSLETTER_JID: process.env.NEWSLETTER_JID || '120363348739987203@newsletter',
+  N_NAME: process.env.N_NAME || "❀༒★[ᴀʀꜱʟᴀɴ-ᴍᴅ]★༒❀",
 
-    // 🎭 REACTIONS & INTERACTIONS
-    CUSTOM_REACT: stringToBool(process.env.CUSTOM_REACT || "false"), // Enable custom reactions
-    CUSTOM_REACT_EMOJIS: process.env.CUSTOM_REACT_EMOJIS || "💝,💖,💗,❤️‍🔥,❤️‍🩹,❤️,🩷,🧡,💛,💚,💙,🩵,💜,🤎,🖤,🩶,🤍", // Emojis for custom reactions
-    AUTO_REACT: stringToBool(process.env.AUTO_REACT || "false"), // Auto-react to messages
-    HEART_REACT: stringToBool(process.env.HEART_REACT || "false"), // Auto-heart react to messages
-    OWNER_REACT: stringToBool(process.env.OWNER_REACT || "true"), // React to owner's messages
+  // ========================
+  // ⚡ AUTO-RESPONSE SYSTEM
+  // ========================
+  AUTO_REPLY: settings.AUTO_REPLY || process.env.AUTO_REPLY || "false",
+  AUTO_STATUS_REPLY: settings.AUTO_STATUS_REPLY || process.env.AUTO_STATUS_REPLY || "false",
+  AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "Just seen ur status 😆 🤖",
+  READ_MESSAGE: settings.READ_MESSAGE || process.env.READ_MESSAGE || "false",
+  REJECT_MSG: process.env.REJECT_MSG || "📵 Calls are not allowed on this number unless you have permission. 🚫",
+  ALIVE_IMG: settings.ALIVE_IMG || process.env.ALIVE_IMG || "https://files.catbox.moe/16i1l7.jpg",
+  LIVE_MSG: process.env.LIVE_MSG || "> ʙᴏᴛ ɪs sᴘᴀʀᴋɪɴɢ ᴀᴄᴛɪᴠᴇ ᴀɴᴅ ᴀʟɪᴠᴇ\n\n\nᴋᴇᴇᴘ ᴜsɪɴɢ ✦ᴀʀꜱʟᴀɴ-ᴍᴅ✦ ғʀᴏᴍ ᴀʀꜱʟᴀɴ ᴛᴇᴄʜ ɪɴᴄ⚡\n\n\n© ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ - ᴍᴅ\n\n> ɢɪᴛʜᴜʙ : github.com/Arslan-MD/Arslan_MD",
 
-    // 👑 OWNER SETTINGS
-    OWNER_NUMBER: process.env.OWNER_NUMBER || "923237045919", // Bot owner's WhatsApp number
-    OWNER_NAME: process.env.OWNER_NAME || "✦ᴀʀꜱʟᴀɴ-ᴍᴅ✦", // Bot owner's display name
-    king: process.env.king || "ᴀʀꜱʟᴀɴ-ᴍᴅ", // Bot king/developer name
-    DEV: process.env.DEV || "923237045919", // Developer contact number
+  // ========================
+  // ✨ REACTION & STICKER
+  // ========================
+  AUTO_REACT: settings.AUTO_REACT || process.env.AUTO_REACT || "false",
+  OWNER_REACT: settings.OWNER_REACT || process.env.OWNER_REACT || "false",
+  CUSTOM_REACT: settings.CUSTOM_REACT || process.env.CUSTOM_REACT || "false",
+  CUSTOM_REACT_EMOJIS: settings.CUSTOM_REACT_EMOJIS || process.env.CUSTOM_REACT_EMOJIS || "💝,💖,💗,❤️‍🩹,❤️,🧡,💛,💚,💙,💜,🤎,🖤,🤍",
+  STICKER_NAME: process.env.STICKER_NAME || "ᴀʀꜱʟᴀɴ-ᴍᴅ",
+  AUTO_STICKER: settings.AUTO_STICKER || process.env.AUTO_STICKER || "false",
 
-    // 🎨 MEDIA & APPEARANCE
-    STICKER_NAME: process.env.STICKER_NAME || "✦ᴀʀꜱʟᴀɴ-ᴍᴅ✦", // Default sticker pack name
-    ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/16i1l7.jpg", // Alive command image URL
-    DESCRIPTION: process.env.DESCRIPTION || "> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀʀꜱʟᴀɴ-ᴍᴅ ᴛᴇᴄʜ 🇵🇰*", // Bot description
+  // ========================
+  // 🎭 MEDIA AUTOMATION
+  // ========================
+  AUTO_RECORDING: settings.AUTO_RECORDING || process.env.AUTO_RECORDING || "false",
+  AUTO_TYPING: settings.AUTO_TYPING || process.env.AUTO_TYPING || "false",
+  MENTION_REPLY: settings.MENTION_REPLY || process.env.MENTION_REPLY || "false",
+  MENU_IMAGE_URL: settings.MENU_IMAGE_URL || process.env.MENU_IMAGE_URL || "https://files.catbox.moe/16i1l7.jpg",
 
-    // 📱 STATUS FEATURES
-    AUTO_STATUS_SEEN: stringToBool(process.env.AUTO_STATUS_SEEN || "true"), // Auto-see status updates
-    AUTO_STATUS_REPLY: stringToBool(process.env.AUTO_STATUS_REPLY || "false"), // Auto-reply to status
-    AUTO_STATUS_REACT: stringToBool(process.env.AUTO_STATUS_REACT || "true"), // Auto-react to status
-    AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "*🎉👀 Status Seen by ✦ᴀʀꜱʟᴀɴ-ᴍᴅ 🚀🔥✦*", // Status reply message
-    CURRENT_STATUS: stringToBool(process.env.CURRENT_STATUS || "true"), // Show current status
+  // ========================
+  // 🛡️ SECURITY & PROTECTION
+  // ========================
+  ANTI_DELETE: settings.ANTI_DELETE || process.env.ANTI_DELETE || "true",
+  ANTI_CALL: settings.ANTI_CALL || process.env.ANTI_CALL || "false",
+  ANTI_BAD_WORD: settings.ANTI_BAD_WORD || process.env.ANTI_BAD_WORD || "false",
+  ANTI_LINK: settings.ANTI_LINK || process.env.ANTI_LINK || "true",
+  ANTI_SPAM: settings.ANTI_SPAM || process.env.ANTI_SPAM || "true",
+  ANTI_VV: settings.ANTI_VV || process.env.ANTI_VV || "true",
+  DELETE_LINKS: settings.DELETE_LINKS || process.env.DELETE_LINKS || "false",
+  ANTI_DEL_PATH: process.env.ANTI_DEL_PATH || "inbox",
+  ANTI_BOT: settings.ANTI_BOT || process.env.ANTI_BOT || "true",
+  PM_BLOCKER: settings.PM_BLOCKER || process.env.PM_BLOCKER || "true",
 
-    // 🚀 ADVANCED AUTOMATION
-    AUTO_VOICE: stringToBool(process.env.AUTO_VOICE || "false"), // Convert text to voice automatically
-    AUTO_STICKER: stringToBool(process.env.AUTO_STICKER || "false"), // Convert images to stickers automatically
-    AUTO_TYPING: stringToBool(process.env.AUTO_TYPING || "true"), // Show typing indicator
-    AUTO_RECORDING: stringToBool(process.env.AUTO_RECORDING || "false"), // Show recording indicator
-    FAKE_RECORDING: stringToBool(process.env.FAKE_RECORDING || "false"), // Fake recording indicator
-    FAKE_TYPING: stringToBool(process.env.FAKE_TYPING || "false"), // Fake typing indicator
-    ALWAYS_ONLINE: stringToBool(process.env.ALWAYS_ONLINE || "true"), // Show bot as always online
-    PUBLIC_MODE: stringToBool(process.env.PUBLIC_MODE || "true"), // Public or private bot mode
+  // ========================
+  // 💫 BOT BEHAVIOR & APPEARANCE
+  // ========================
+  DESCRIPTION: process.env.DESCRIPTION || "© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀʀꜱʟᴀɴ-ᴍᴅ",
+  PUBLIC_MODE: settings.PUBLIC_MODE || process.env.PUBLIC_MODE || "true",
+  ALWAYS_ONLINE: settings.ALWAYS_ONLINE || process.env.ALWAYS_ONLINE || "false",
+  AUTO_STATUS_REACT: settings.AUTO_STATUS_REACT || process.env.AUTO_STATUS_REACT || "true",
+  AUTO_STATUS_SEEN: settings.AUTO_STATUS_SEEN || process.env.AUTO_STATUS_SEEN || "true",
+  AUTO_BIO: settings.AUTO_BIO || process.env.AUTO_BIO || "false",
+  WELCOME: settings.WELCOME || process.env.WELCOME || "false",
+  GOODBYE: settings.GOODBYE || process.env.GOODBYE || "false",
+  ADMIN_ACTION: settings.ADMIN_ACTION || process.env.ADMIN_ACTION || "false",
+  version: process.env.version || "2.0.1",
+  TIMEZONE: settings.TIMEZONE || process.env.TIMEZONE || "Asia/Karachi",
 
-    // 💌 BOT MESSAGES
-    LIVE_MSG: process.env.LIVE_MSG || "> 🤖 ʙᴏᴛ ɪs sᴘᴀʀᴋɪɴɢ ᴀᴄᴛɪᴠᴇ ᴀɴᴅ ᴀʟɪᴠᴇ\n\nᴋᴇᴇᴘ ᴜsɪɴɢ ✦ᴀʀꜱʟᴀɴ-ᴍᴅ✦ ғʀᴏᴍ ᴀʀꜱʟᴀɴ-ᴍᴅ ᴛᴇᴄʜ ɪɴᴄ⚡\n\n*© ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ - ᴍᴅ*\n> 🌐 *ɢɪᴛʜᴜʙ :* github.com/Arslan-MD/Arslan_MD", // Alive message
+  // ========================
+  // 📊 LOGGING & DEBUGGING
+  // ========================
+  LOGGING_ENABLED: process.env.LOGGING_ENABLED || "false",
 
-    // 🎊 STARTUP MESSAGE
-    START_MSG: process.env.START_MSG || `*Hᴇʟʟᴏ ᴛʜᴇʀᴇ ᴀʀꜱʟᴀɴ-ᴍᴅ ᴄᴏɴɴᴇᴄᴛᴇᴅ! 👋🏻* 
+  // ========================
+  // ⏳ SYSTEM VARIABLES
+  // ========================
+  wait: "Please wait...",
+  BOTCAHX_API_KEY: global.btc,
 
-   *ᴋᴇᴇᴘ ᴏɴ ᴜsɪɴɢ ᴀʀꜱʟᴀɴ-ᴍᴅ 🇵🇰* 
+  // ========================
+  // 🖼️ THUMBNAIL & ASSETS
+  // ========================
+  thumbnailutama: "https://files.catbox.moe/16i1l7.jpg",
 
-> 😘Joɪɴ ᴡʜᴀᴛsᴀᴘᴘ ᴄʜᴀɴɴᴇʟ (ᴀ ᴍᴜsᴛ): ⤵️  
-* *~_https://whatsapp.com/channel/0029VarfjW04tRrmwfb8x306_~*
-
-> ♻️sᴜʙsᴄʀɪʙᴇ ʏᴛ ᴄʜᴀɴɴᴇʟ ғᴏʀ ᴛᴜᴛᴏʀɪᴀʟs
-* *~_https://youtube.com/@arslanmdofficial_~*
-
-    🫣- *ʏᴏᴜʀ ʙᴏᴛ ᴘʀᴇғɪx: ➡️[ . ]*
-> - ʏᴏᴜ ᴄᴀɴ ᴄʜᴀɴɢᴇ ᴜʀ ᴘʀᴇғɪx ᴜsɪɴɢ ᴛʜᴇ .ᴘʀᴇғɪx ᴄᴏᴍᴍᴀɴᴅ
-
-> ᴅᴏɴᴛ ғᴏʀɢᴇᴛ ᴛᴏ sʜᴀʀᴇ, sᴛᴀʀ &ғᴏʀᴋ ᴛʜᴇ ʀᴇᴘᴏ ⬇️ 
-* *~_https://github.com/Arslan-MD/Arslan_MD_~*
-
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀʀꜱʟᴀɴ-ᴍᴅ ☣️` // Bot startup message
-};
-
-// 💫 ARSLAN-MD STYLE GUIDE
-global.ARS_STYLE = {
-    EMOJIS: {
-        SUCCESS: "✅", // Success operation emoji
-        ERROR: "❌", // Error operation emoji  
-        WARNING: "⚠️", // Warning message emoji
-        LOADING: "⏳", // Loading indicator emoji
-        SPARKLE: "✨", // Sparkle effect emoji
-        ROCKET: "🚀", // Rocket/speed emoji
-        FIRE: "🔥", // Fire/hot emoji
-        CROWN: "👑" // Crown/royalty emoji
-    },
-    COLORS: {
-        PRIMARY: "#FF0000", // Primary brand color
-        SECONDARY: "#00FF00", // Secondary brand color  
-        ACCENT: "#0000FF" // Accent brand color
-    }
+  // ========================
+  // 🔗 SOCIAL LINKS
+  // ========================
+  instagramowner: "https://instagram.com/arslanmdofficial",
+  
+  // ========================
+  // 📸 MENU CATEGORY IMAGES
+  // ========================
+  MENU_IMAGES: {
+    '1': process.env.DOWNLOAD_MENU_IMAGE || "https://files.catbox.moe/16i1l7.jpg",
+    '2': process.env.GROUP_MENU_IMAGE || "https://files.catbox.moe/16i1l7.jpg",
+    '3': process.env.FUN_MENU_IMAGE || "https://files.catbox.moe/16i1l7.jpg",
+    '4': process.env.OWNER_MENU_IMAGE || "https://files.catbox.moe/16i1l7.jpg",
+    '5': process.env.AI_MENU_IMAGE || "https://files.catbox.moe/16i1l7.jpg",
+    '6': process.env.ANIME_MENU_IMAGE || "https://files.catbox.moe/16i1l7.jpg",
+    '7': process.env.CONVERT_MENU_IMAGE || "https://files.catbox.moe/16i1l7.jpg",
+    '8': process.env.OTHER_MENU_IMAGE || "https://files.catbox.moe/16i1l7.jpg",
+    '9': process.env.REACTION_MENU_IMAGE || "https://files.catbox.moe/16i1l7.jpg",
+    '10': process.env.MAIN_MENU_IMAGE || "https://files.catbox.moe/16i1l7.jpg",
+    '11': process.env.LOGO_MAKER_MENU_IMAGE || "https://files.catbox.moe/16i1l7.jpg",
+    '12': process.env.SETTINGS_MENU_IMAGE || "https://files.catbox.moe/16i1l7.jpg",
+    '13': process.env.AUDIO_MENU_IMAGE || "https://files.catbox.moe/16i1l7.jpg",
+    '14': process.env.PRIVACY_MENU_IMAGE || "https://files.catbox.moe/16i1l7.jpg"
+  }
 };
