@@ -43,7 +43,7 @@ global.APIKeys = {
 // Developer: ArslanMD Official
 // Bot Name: Arslan-MD
 // Repository: https://github.com/Arslan-MD/Arslan_MD
-// Version: 2.0.1
+// Version: 5.0.0
 
 module.exports = {
   // ========================
