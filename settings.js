@@ -43,7 +43,7 @@ global.APIKeys = {
 // Developer: ArslanMD Official
 // Bot Name: Arslan-MD
 // Repository: https://github.com/Arslan-MD/Arslan_MD
-// Version: 5.0.0
+// Version: 2.0.1
 
 module.exports = {
   // ========================
@@ -122,16 +122,16 @@ module.exports = {
   // ========================
   // 🛡️ SECURITY & PROTECTION
   // ========================
-  ANTI_DELETE: settings.ANTI_DELETE || process.env.ANTI_DELETE || "true",
+  ANTI_DELETE: settings.ANTI_DELETE || process.env.ANTI_DELETE || "false",
   ANTI_CALL: settings.ANTI_CALL || process.env.ANTI_CALL || "false",
   ANTI_BAD_WORD: settings.ANTI_BAD_WORD || process.env.ANTI_BAD_WORD || "false",
-  ANTI_LINK: settings.ANTI_LINK || process.env.ANTI_LINK || "true",
-  ANTI_SPAM: settings.ANTI_SPAM || process.env.ANTI_SPAM || "true",
-  ANTI_VV: settings.ANTI_VV || process.env.ANTI_VV || "true",
+  ANTI_LINK: settings.ANTI_LINK || process.env.ANTI_LINK || "false",
+  ANTI_SPAM: settings.ANTI_SPAM || process.env.ANTI_SPAM || "false",
+  ANTI_VV: settings.ANTI_VV || process.env.ANTI_VV || "false",
   DELETE_LINKS: settings.DELETE_LINKS || process.env.DELETE_LINKS || "false",
   ANTI_DEL_PATH: process.env.ANTI_DEL_PATH || "inbox",
-  ANTI_BOT: settings.ANTI_BOT || process.env.ANTI_BOT || "true",
-  PM_BLOCKER: settings.PM_BLOCKER || process.env.PM_BLOCKER || "true",
+  ANTI_BOT: settings.ANTI_BOT || process.env.ANTI_BOT || "false",
+  PM_BLOCKER: settings.PM_BLOCKER || process.env.PM_BLOCKER || "false",
 
   // ========================
   // 💫 BOT BEHAVIOR & APPEARANCE
