@@ -26,7 +26,7 @@
 
 <!-- GLOWING MAIN BADGE -->
 
-<img src="https://img.shields.io/badge/🔥_ULTRA_PRO_MAX_EDITION-FF0000?style=for-the-badge&logo=starship&logoColor=white&labelColor=000000&animation=pulse" alt="Ultra Pro Max" />
+<img src="https://img.shields.io/badge/🔥_ARSLAN_MD_EDITION-FF0000?style=for-the-badge&logo=starship&logoColor=white&labelColor=000000&animation=pulse" alt="Arslan-MD" />
 
 </div>
 
@@ -244,11 +244,11 @@
 
 ---
 
-<!-- ULTRA INSTALLATION GUIDE -->
+<!-- ARSLAN-MD INSTALLATION GUIDE -->
 
 <div align="center">
 
-⚡ ULTRA PRO MAX INSTALLATION
+⚡ ARSLAN-MD INSTALLATION
 
 <!-- ANIMATED CODE BLOCK -->
 
@@ -259,7 +259,7 @@
 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 20% 80%, transparent 0%, transparent 50%, rgba(0,255,255,0.1) 50%, rgba(0,255,255,0.1) 100%); animation: float 6s ease-in-out infinite;"></div>
 
 ```bash
-# 🎯 ULTRA PRO MAX INSTALLATION GUIDE
+# 🎯 ARSLAN-MD INSTALLATION GUIDE
 
 # 1️⃣ CLONE REPOSITORY
 git clone https://github.com/Arslan-MD/Arslan_MD.git
@@ -285,11 +285,11 @@ npm start
 
 ---
 
-<!-- ULTRA FEATURES SHOWCASE -->
+<!-- ARSLAN-MD FEATURES SHOWCASE -->
 
 <div align="center">
 
-🌠 ULTRA PRO MAX FEATURES
+🌠 ARSLAN-MD FEATURES
 
 <!-- FEATURES GRID WITH ANIMATIONS -->
 
@@ -320,7 +320,7 @@ npm start
 
 <div style="background: linear-gradient(135deg, #000000, #330033); padding: 20px; border-radius: 15px; border: 2px solid #00FFFF; text-align: center; animation: glow 2s ease-in-out infinite alternate;">
   <h3 style="color: #00FFFF; margin: 0;">⚡ LIGHTNING FAST</h3>
-  <p style="color: #FFFFFF;">Ultra Fast Response Times</p>
+  <p style="color: #FFFFFF;">ARSLAN-MD</p>
 </div>
 
 </div>
@@ -333,7 +333,7 @@ npm start
 
 <div align="center">
 
-🤝 ULTRA CONTRIBUTION ZONE
+🤝 ARSLAN-MD CONTRIBUTION ZONE
 
 <!-- ANIMATED CONTRIBUTION BADGES -->
 
@@ -361,11 +361,11 @@ npm start
 
 ---
 
-<!-- ULTRA DISCLAIMER -->
+<!-- ARSLAN-MD DISCLAIMER -->
 
 <div align="center">
 
-⚠️ ULTRA IMPORTANT DISCLAIMER
+⚠️ ARSLAN-MD IMPORTANT DISCLAIMER
 
 <!-- ANIMATED WARNING -->
 
@@ -375,7 +375,7 @@ npm start
 
 <div style="font-size: 50px; color: #FF0000; animation: pulse 1s infinite;">⚠️</div>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=18&duration=2500&pause=1000&color=FFFFFF&background=000000&center=true&vCenter=true&width=700&lines=This+bot+is+NOT+affiliated+with+WhatsApp+Inc.;Use+at+your+OWN+RISK.;Developers+are+NOT+responsible+for+misuse.;Please+use+responsibly+and+respectfully." alt="Ultra Disclaimer" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=18&duration=2500&pause=1000&color=FFFFFF&background=000000&center=true&vCenter=true&width=700&lines=This+bot+is+NOT+affiliated+with+WhatsApp+Inc.;Use+at+your+OWN+RISK.;Developers+are+NOT+responsible+for+misuse.;Please+use+responsibly+and+respectfully." alt="Arslan-MD Disclaimer" />
 
 </div>
 
@@ -383,7 +383,7 @@ npm start
 
 ---
 
-<!-- ULTRA FOOTER GALAXY -->
+<!-- ARSLAN-MD FOOTER GALAXY -->
 
 <div align="center">
 
@@ -419,9 +419,9 @@ npm start
 
 <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
 
-<img src="https://komarev.com/ghpvc/?username=Arslan-MD&label=ULTRA+PROFILE+VIEWS&style=flat-square&color=00FFFF&labelColor=000000&animation=glow" alt="Profile Views"/>
+<img src="https://komarev.com/ghpvc/?username=Arslan-MD&label=ARSLAN-MD+PROFILE+VIEWS&style=flat-square&color=00FFFF&labelColor=000000&animation=glow" alt="Profile Views"/>
 
-<img src="https://img.shields.io/badge/🚀_ULTRA_PRO_MAX-FF0000?style=for-the-badge&logo=starship&logoColor=white&labelColor=000000" alt="Ultra Badge"/>
+<img src="https://img.shields.io/badge/🚀_ARSLAN-MD-FF0000?style=for-the-badge&logo=starship&logoColor=white&labelColor=000000" alt="ARSLAN-MD Badge"/>
 
 <img src="https://img.shields.io/badge/⭐_STAR_THIS_REPO-FFD700?style=for-the-badge&logo=github&logoColor=black&labelColor=000000" alt="Star Repo"/>
 
@@ -431,11 +431,11 @@ npm start
 
 ---
 
-<!-- ULTRA MARQUEE EFFECT -->
+<!-- ARSLAN-MD MARQUEE EFFECT -->
 
 <div style="background: linear-gradient(90deg, #000000, #330033, #000000); padding: 15px; border: 2px solid #00FFFF; margin-top: 30px; border-radius: 10px; overflow: hidden;">
   <marquee behavior="scroll" direction="left" scrollamount="15" style="color: #00FFFF; font-size: 18px; font-weight: bold; padding: 10px;">
-    🚀 ARSLAN-TECH-BOT ULTRA PRO MAX • 🤖 ADVANCED AI WHATSAPP BOT • 🔥 VERSION 5.0 ULTRA • ⭐ STAR & FORK THE REPOSITORY • 💬 JOIN OUR ULTRA COMMUNITY • 🎉 EXPERIENCE THE FUTURE OF BOTS
+    🚀 ARSLAN-TECH-BOT ARSLAN-MD • 🤖 ADVANCED AI WHATSAPP BOT • 🔥 VERSION 5.0 ARSLAN-MD • ⭐ STAR & FORK THE REPOSITORY • 💬 JOIN OUR ARSLAN-MD COMMUNITY • 🎉 EXPERIENCE THE FUTURE OF BOTS
   </marquee>
 </div>
 
@@ -444,4 +444,3 @@ npm start
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=150&section=footer&animation=twinkling" alt="Footer" />
 </div>
-
