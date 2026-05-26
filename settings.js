@@ -60,7 +60,7 @@ module.exports = {
   AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "Just seen ur status 😆 🤖",
   READ_MESSAGE: settings.READ_MESSAGE || process.env.READ_MESSAGE || "false",
   REJECT_MSG: process.env.REJECT_MSG || "📵 Calls are not allowed on this number unless you have permission. 🚫",
-  ALIVE_IMG: settings.ALIVE_IMG || process.env.ALIVE_IMG || "https://files.catbox.moe/16i1l7.jpg",
+  ALIVE_IMG: settings.ALIVE_IMG || process.env.ALIVE_IMG || "https://files.catbox.moe/6a48t4.png",
   LIVE_MSG: process.env.LIVE_MSG || "> ʙᴏᴛ ɪs sᴘᴀʀᴋɪɴɢ ᴀᴄᴛɪᴠᴇ ᴀɴᴅ ᴀʟɪᴠᴇ\n\n\nᴋᴇᴇᴘ ᴜsɪɴɢ ✦ᴀʀꜱʟᴀɴ-ᴍᴅ✦ ғʀᴏᴍ ᴀʀꜱʟᴀɴ ᴛᴇᴄʜ ɪɴᴄ⚡\n\n\n© ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ - ᴍᴅ\n\n> ɢɪᴛʜᴜʙ : github.com/Arslan-MD/Arslan_MD",
 
   // ============================================
@@ -79,7 +79,7 @@ module.exports = {
   AUTO_RECORDING: settings.AUTO_RECORDING || process.env.AUTO_RECORDING || "false",
   AUTO_TYPING: settings.AUTO_TYPING || process.env.AUTO_TYPING || "false",
   MENTION_REPLY: settings.MENTION_REPLY || process.env.MENTION_REPLY || "false",
-  MENU_IMAGE_URL: settings.MENU_IMAGE_URL || process.env.MENU_IMAGE_URL || "https://files.catbox.moe/16i1l7.jpg",
+  MENU_IMAGE_URL: settings.MENU_IMAGE_URL || process.env.MENU_IMAGE_URL || "https://files.catbox.moe/6a48t4.png",
 
   // ============================================
   // 🛡️ SECURITY & PROTECTION
@@ -125,7 +125,7 @@ module.exports = {
   // ============================================
   // 🖼️ THUMBNAIL & ASSETS
   // ============================================
-  thumbnailutama: "https://files.catbox.moe/16i1l7.jpg",
+  thumbnailutama: "https://files.catbox.moe/6a48t4.png",
 
   // ============================================
   // 🔗 SOCIAL LINKS
@@ -136,19 +136,19 @@ module.exports = {
   // 📸 MENU CATEGORY IMAGES
   // ============================================
   MENU_IMAGES: {
-    '1': process.env.DOWNLOAD_MENU_IMAGE || "https://files.catbox.moe/16i1l7.jpg",
-    '2': process.env.GROUP_MENU_IMAGE || "https://files.catbox.moe/16i1l7.jpg",
-    '3': process.env.FUN_MENU_IMAGE || "https://files.catbox.moe/16i1l7.jpg",
-    '4': process.env.OWNER_MENU_IMAGE || "https://files.catbox.moe/16i1l7.jpg",
-    '5': process.env.AI_MENU_IMAGE || "https://files.catbox.moe/16i1l7.jpg",
-    '6': process.env.ANIME_MENU_IMAGE || "https://files.catbox.moe/16i1l7.jpg",
-    '7': process.env.CONVERT_MENU_IMAGE || "https://files.catbox.moe/16i1l7.jpg",
-    '8': process.env.OTHER_MENU_IMAGE || "https://files.catbox.moe/16i1l7.jpg",
-    '9': process.env.REACTION_MENU_IMAGE || "https://files.catbox.moe/16i1l7.jpg",
-    '10': process.env.MAIN_MENU_IMAGE || "https://files.catbox.moe/16i1l7.jpg",
-    '11': process.env.LOGO_MAKER_MENU_IMAGE || "https://files.catbox.moe/16i1l7.jpg",
-    '12': process.env.SETTINGS_MENU_IMAGE || "https://files.catbox.moe/16i1l7.jpg",
-    '13': process.env.AUDIO_MENU_IMAGE || "https://files.catbox.moe/16i1l7.jpg",
-    '14': process.env.PRIVACY_MENU_IMAGE || "https://files.catbox.moe/16i1l7.jpg"
+    '1': process.env.DOWNLOAD_MENU_IMAGE || "https://files.catbox.moe/6a48t4.png",
+    '2': process.env.GROUP_MENU_IMAGE || "https://files.catbox.moe/6a48t4.png",
+    '3': process.env.FUN_MENU_IMAGE || "https://files.catbox.moe/6a48t4.png",
+    '4': process.env.OWNER_MENU_IMAGE || "https://files.catbox.moe/6a48t4.png",
+    '5': process.env.AI_MENU_IMAGE || "https://files.catbox.moe/6a48t4.png",
+    '6': process.env.ANIME_MENU_IMAGE || "https://files.catbox.moe/6a48t4.png",
+    '7': process.env.CONVERT_MENU_IMAGE || "https://files.catbox.moe/6a48t4.png",
+    '8': process.env.OTHER_MENU_IMAGE || "https://files.catbox.moe/6a48t4.png",
+    '9': process.env.REACTION_MENU_IMAGE || "https://files.catbox.moe/6a48t4.png",
+    '10': process.env.MAIN_MENU_IMAGE || "https://files.catbox.moe/6a48t4.png",
+    '11': process.env.LOGO_MAKER_MENU_IMAGE || "https://files.catbox.moe/6a48t4.png",
+    '12': process.env.SETTINGS_MENU_IMAGE || "https://files.catbox.moe/6a48t4.png",
+    '13': process.env.AUDIO_MENU_IMAGE || "https://files.catbox.moe/6a48t4.png",
+    '14': process.env.PRIVACY_MENU_IMAGE || "https://files.catbox.moe/6a48t4.png"
   }
 };
